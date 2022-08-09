@@ -5,34 +5,79 @@
     <title>Hobby form</title>
 </head>
 <body style="background-color: aqua">
-    <form style="background-color: aliceblue">
-        <h2 style="background-color: red; color: white; text-align: center"> SỞ THÍCH CỦA BẠN</h2>
-        <p style="margin-left: 576px">
-            <label style="color: blue"> Họ và tên </label>
-            <label>
-                <input type="text" name="yourname" size="30px">
-            </label>
-        </p>
-        <p style="margin-left: 600px">
-            <label style="color: blue"> Email </label>
-            <label>
-                <input type="text" name="email" size="30px"/>
-            </label>
-        </p>
-        <p>
-            <label style="color: blue; margin-left: 580px"> Sở thích</label>
-            <label style="color: orange"><input type="checkbox" name="hobby" value="sport"/> Thể thao</label>
-            <label style="color: orange; margin-left: 15px"><input type="checkbox" name="hobby" value="music"/> Âm nhạc</label>
-            <label style="color: orange; margin-left: 15px"><input type="checkbox" name="hobby" value="books"/> Đọc sách</label> <br/>
-            <label style="color: orange; margin-left: 637px"><input type="checkbox" name="hobby" value="internet"/> Lướt web</label>
-            <label style="color: orange; margin-left: 9px"><input type="checkbox" name="hobby" value="game/"> Chơi game</label>
-            <label style="color: orange; margin-left: 3px"><input type="checkbox" name="hobby" value="film"/> Điện ảnh</label> <br/>
-            <label style="color: orange; margin-left: 637px"><input type="checkbox" name="hobby" value="travel"/> Du lịch</label>
-        </p>
-        <p style="text-align: center">
-            <input type="submit" value="Gửi thông tin"/>
-            <input type="reset" value="Nhập lại"/> <br/>
-        </p>
+    <form style="background-color: aliceblue" >
+        <table style="width: 50%" align="center">
+            <tr>
+                <th colspan="5">
+                    <h2 style="background-color: red; color: white; text-align: center; width: 100%"> SỞ THÍCH CỦA BẠN</h2>
+                </th>
+            </tr>
+            <tr>
+                <td style="width: 20%; text-align: right">
+                    <label style="color: blue"> Họ và tên </label>
+                </td>
+                <td colspan="2" width="40%">
+                    <label>
+                        <input size="40%" type="text" name="yourname">
+                    </label>
+                </td>
+                <td width="20%"></td>
+                <td width="20%"></td>
+            </tr>
+            <tr>
+                <td style="width: 20%; text-align: right">
+                    <label style="color: blue"> Email </label>
+                </td>
+                <td colspan="2" width="20%">
+                    <label>
+                        <input type="text" name="email"/>
+                    </label>
+                </td>
+                <td width="20%"></td>
+                <td width="20%"></td>
+            </tr>
+            <tr>
+                <td style="width: 20%; text-align: right">
+                    <label style="color: blue"> Sở thích</label>
+                </td>
+                <td>
+                    <label style="color: orange"><input type="checkbox" name="hobby" value="sport"/> Thể thao</label>
+                </td>
+                <td>
+                    <label style="color: orange"><input type="checkbox" name="hobby" value="music"/> Âm nhạc</label>
+                </td>
+                <td>
+                    <label style="color: orange"><input type="checkbox" name="hobby" value="books"/> Đọc sách</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <label style="color: orange"><input type="checkbox" name="hobby" value="internet"/> Lướt web</label>
+                </td>
+                <td>
+                    <label style="color: orange"><input type="checkbox" name="hobby" value="game/"> Chơi game</label>
+                </td>
+                <td>
+                    <label style="color: orange"><input type="checkbox" name="hobby" value="film"/> Điện ảnh</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <label style="color: orange"><input type="checkbox" name="hobby" value="travel"/> Du lịch</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Gửi thông tin"/>
+                </td>
+                <td>
+                    <input type="reset" value="Nhập lại"/> <br/>
+                </td>
+            </tr>
+        </table>
     </form>
 
 </body>
