@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration form</title>
+</head>
+<body style="background-color: lemonchiffon">
+    <form style="background-color: lemonchiffon">
+        <h1 style ="background-color: aquamarine; color: blue"> ĐĂNG KÝ HỌC VIÊN</h1>
+        <p>
+            <label> Họ và tên </label>
+            <label>
+                <input type="text" name="fullname" size="30" />
+            </label>
+            <br/>
+        </p>
+        <p>
+            <label> Ngày sinh </label>
+            <label>
+                <input type="text" name="dob" size="15"/>
+            </label>
+            <br/>
+        </p>
+        <p>
+            <label> Giới tính </label>
+            <label><input type="radio" name="gender" value="male"/> Nam</label>
+            <label><input type="radio" name="gender" value="female"/> Nữ</label>
+            <br/>
+        </p>
+        <p>
+            <label> Địa chỉ </label>
+            <label>
+                <textarea cols="30" rows="4" name="address"></textarea>
+            </label>
+            <br/>
+        </p>
+        <p>
+            <label> Lớp </label>
+            <label>
+                <select name="class">
+                    <option value="">--Chọn lớp--</option>
+                    <option value="a01">A01</option>
+                    <option value="a02">A02</option>
+                    <option value="a03">A03</option>
+                </select>
+            </label>
+            <br/>
+        </p>
+        <p>
+            <label> Email </label>
+            <label>
+                <input type="text" name="email" size="30"/>
+            </label>
+            <br/>
+        </p>
+        <p>
+            <label> Số điện thoại </label>
+            <label>
+                <input type="text" name="phonenumber" size="30"/>
+            </label>
+            <br/>
+        </p>
+        <p>
+            <input type="submit" value="Đăng ký"/>
+            <input type="reset" value="Nhập lại"/> <br/>
+        </p>
+    </form>
+</body>
+</html>
