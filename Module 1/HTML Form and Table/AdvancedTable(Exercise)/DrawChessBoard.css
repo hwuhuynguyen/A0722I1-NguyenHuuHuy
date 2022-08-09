@@ -1,0 +1,24 @@
+body {
+    background-color: orange;
+    border-collapse: collapse;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+table {
+    width: 75%;
+}
+td {
+    padding: 40px;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+}
+.letter {
+    padding: 10px;
+}
+.black {
+    background-color: black;
+}
+.white {
+    background-color: white;
+}
