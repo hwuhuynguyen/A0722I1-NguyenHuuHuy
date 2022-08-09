@@ -1,15 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a71d6b61-70ab-42bf-9b37-3ea046745843" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/HTML Form and Table/AdvancedTable(Practice).css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Form and Table/AdvancedTable(Practice).html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Form and Table/SimpleTable(Exercise).css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Form and Table/SimpleTable(Exercise).html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Form and Table/SimpleTable(Practice).css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML Form and Table/SimpleTable(Practice).html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML Form and Table/HobbyForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML Form and Table/HobbyForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML Form and Table/RegistrationForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML Form and Table/RegistrationForm.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -21,9 +51,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -44,10 +76,22 @@
       <workItem from="1660018159702" duration="17000" />
       <workItem from="1660018283157" duration="10000" />
       <workItem from="1660019183608" duration="5560000" />
+      <workItem from="1660037471162" duration="6244000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
