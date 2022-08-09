@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a71d6b61-70ab-42bf-9b37-3ea046745843" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea/.idea.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Module 1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicCVProfile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicHTML.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CreateSimpleList.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HobbyForm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MarketResearchSurvey.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RegistrationForm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleForm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleQuery.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserRegistrationForm.html" beforeDir="false" />
-    </list>
+    <list default="true" id="a71d6b61-70ab-42bf-9b37-3ea046745843" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +32,7 @@
       <option name="presentableId" value="Default" />
       <updated>1660018157559</updated>
       <workItem from="1660018159702" duration="17000" />
+      <workItem from="1660018283157" duration="10000" />
     </task>
     <servers />
   </component>
