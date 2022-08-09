@@ -1,0 +1,65 @@
+body {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+h1 {
+    text-align: center;
+    color: blue;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid gray;
+    font-size: 32px;
+}
+
+tr {
+    text-align: center;
+}
+.theader1 {
+    background-color: red;
+    color: white;
+    border: 0px;
+    font-size: 16px;
+}
+.theader2 {
+    background-color: orange;
+    color: white;
+    border: 0px;
+    font-size: 16px;
+}
+.theader3 {
+    background-color: blue;
+    color: white;
+    border: 0px;
+    font-size: 16px;
+}
+.theaderA {
+    color: red;
+    border: 0px;
+    font-size: 16px;
+}
+.theaderB {
+    color: orange;
+    border: 0px;
+    font-size: 16px;
+}
+.theaderC {
+    color: blue;
+    border: 0px;
+    font-size: 16px;
+}
+.lunar {
+    font-size: 16px;
+    color: black;
+}
+.sun {
+    color: red;
+}
+.sat {
+    color: blue;
+}
+
