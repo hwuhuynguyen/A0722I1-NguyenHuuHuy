@@ -20,6 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a71d6b61-70ab-42bf-9b37-3ea046745843" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Variable, Data type, Operator/Practice/DeclareAndUseVariables/DeclareAndUseVariables.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Variable, Data type, Operator/Practice/DeclareAndUseVariables/Exercise1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Variable, Data type, Operator/Practice/DeclareAndUseVariables/Exercise2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Variable, Data type, Operator/Practice/DeclareAndUseVariables/Exercise3.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +80,7 @@
       <workItem from="1660133643147" duration="537000" />
       <workItem from="1660191294286" duration="655000" />
       <workItem from="1660223395081" duration="644000" />
-      <workItem from="1660292001001" duration="821000" />
+      <workItem from="1660292001001" duration="3522000" />
     </task>
     <servers />
   </component>
