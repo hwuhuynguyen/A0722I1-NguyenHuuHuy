@@ -21,32 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a71d6b61-70ab-42bf-9b37-3ea046745843" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Git and HTML/BasicCVProfile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Git and HTML/BasicHTML.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Git and HTML/CreateSimpleList.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML Form and Table/AdvancedTable(Exercise)/CreateCalendar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML Form and Table/AdvancedTable(Exercise)/CreateCalendar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML Form and Table/AdvancedTable(Exercise)/DrawChessBoard.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML Form and Table/AdvancedTable(Exercise)/DrawChessBoard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML Form and Table/AdvancedTable(Practice)/AdvancedTable(Practice).css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML Form and Table/AdvancedTable(Practice)/AdvancedTable(Practice).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML Form and Table/HobbyForm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML Form and Table/MarketResearchSurvey.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML Form and Table/RegistrationForm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML Form and Table/SimpleForm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML Form and Table/SimpleQuery.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML Form and Table/SimpleTable(Exercise)/SimpleTable(Exercise).css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML Form and Table/SimpleTable(Exercise)/SimpleTable(Exercise).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML Form and Table/SimpleTable(Practice)/SimpleTable(Practice).css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML Form and Table/SimpleTable(Practice)/SimpleTable(Practice).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML Form and Table/UserRegistrationForm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pseudo-code and Flowchart/Average-Score-Algorithm.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pseudo-code and Flowchart/Conditional-Structured-Algorithm.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pseudo-code and Flowchart/Currency-Conversion-Algorithm.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pseudo-code and Flowchart/Guessing-Number-Game.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pseudo-code and Flowchart/Maximum-Value-in-a-Sequence-of-Numbers.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pseudo-code and Flowchart/Maximum-Value-of-3-Numbers.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pseudo-code and Flowchart/Temperature-Conversion-Algorithm.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +73,10 @@
       <workItem from="1660019183608" duration="5560000" />
       <workItem from="1660037471162" duration="12386000" />
       <workItem from="1660131168595" duration="1943000" />
+      <workItem from="1660133643147" duration="537000" />
+      <workItem from="1660191294286" duration="655000" />
+      <workItem from="1660223395081" duration="644000" />
+      <workItem from="1660292001001" duration="821000" />
     </task>
     <servers />
   </component>
