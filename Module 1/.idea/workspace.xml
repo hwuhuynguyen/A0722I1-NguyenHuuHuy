@@ -19,11 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a71d6b61-70ab-42bf-9b37-3ea046745843" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Variable, Data type, Operator/Practice/DeclareAndUseVariables/DeclareAndUseVariables.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Variable, Data type, Operator/Practice/DeclareAndUseVariables/Exercise1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Variable, Data type, Operator/Practice/DeclareAndUseVariables/Exercise2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Variable, Data type, Operator/Practice/DeclareAndUseVariables/Exercise3.js" afterDir="false" />
+    <list default="true" id="a71d6b61-70ab-42bf-9b37-3ea046745843" name="Default Changelist" comment="Submit module 1 assignments (Variable, data type and operator - Practice)">
+      <change afterPath="$PROJECT_DIR$/Variable, Data type, Operator/Exercise/CurrencyConversion/CurrencyConversion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Variable, Data type, Operator/Exercise/CurrencyConversion/CurrencyConversion.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Variable, Data type, Operator/Exercise/CurrencyConversion/CurrencyConversion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Variable, Data type, Operator/Exercise/Variable-DataType-Operator/Exercise1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Variable, Data type, Operator/Exercise/Variable-DataType-Operator/Exercise2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Variable, Data type, Operator/Exercise/Variable-DataType-Operator/Exercise3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Variable, Data type, Operator/Exercise/Variable-DataType-Operator/Exercise4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Variable, Data type, Operator/Exercise/Variable-DataType-Operator/Variable-DataType-Operator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Variable, Data type, Operator/Practice/Operator/Operator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Variable, Data type, Operator/Practice/Operator/Operator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -80,8 +86,19 @@
       <workItem from="1660133643147" duration="537000" />
       <workItem from="1660191294286" duration="655000" />
       <workItem from="1660223395081" duration="644000" />
-      <workItem from="1660292001001" duration="3522000" />
+      <workItem from="1660292001001" duration="5585000" />
+      <workItem from="1660300941561" duration="4375000" />
+      <workItem from="1660310825106" duration="2847000" />
+      <workItem from="1660362031663" duration="4010000" />
     </task>
+    <task id="LOCAL-00001" summary="Submit module 1 assignments (Variable, data type and operator - Practice)">
+      <created>1660296247945</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660296247945</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,5 +115,15 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Submit module 1 assignments (Variable, data type and operator - Practice)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Submit module 1 assignments (Variable, data type and operator - Practice)" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1660362279319">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1660362279319" />
   </component>
 </project>

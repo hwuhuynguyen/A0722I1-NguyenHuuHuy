@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Conversion App</title>
+    <link rel="stylesheet" href="CurrencyConversion.css">
+</head>
+<body>
+    <form>
+    <table>
+        <tr>
+            <th><label>Amount</label></th>
+            <th><label>From Currency</label></th>
+            <th><label>To Currency</label></th>
+        </tr>
+        <tr>
+            <td>
+                <label>
+                    <input type="text" name="amount" id="amount">
+                </label>
+            </td>
+            <td>
+                <label>
+                    <select name="fromCurrency" id="fromCurrency">
+                        <option value="VND"> Viet Nam Dong (VND) </option>
+                        <option value="USD"> Dollar (USD) </option>
+                        <option value="GBP"> Bảng Anh (GBP) </option>
+                        <option value="KRW"> Won (KRW) </option>
+                        <option value="EUR"> Euro (EUR) </option>
+                        <option value="JPY"> Yên Nhật (JPY) </option>
+                    </select>
+                </label>
+            </td>
+            <td>
+                <label>
+                    <select name="toCurrency" id="toCurrency">
+                        <option value="VND"> Việt Nam Đồng (VND) </option>
+                        <option value="USD"> Dollar (USD) </option>
+                        <option value="GBP"> Bảng Anh (GBP) </option>
+                        <option value="KRW"> Won (KRW) </option>
+                        <option value="EUR"> Euro (EUR) </option>
+                        <option value="JPY"> Yên Nhật (JPY) </option>
+                    </select>
+                </label>
+            </td>
+            <td>
+                <button type="button" onclick="convertCurrency()">Convert</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3"><label class="result">Result: </label><label class="result" id="result"></label></td>
+        </tr>
+    </table>
+    </form>
+
+<script src="CurrencyConversion.js"></script>
+</body>
+</html>
