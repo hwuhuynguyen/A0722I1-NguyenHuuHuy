@@ -20,10 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a71d6b61-70ab-42bf-9b37-3ea046745843" name="Default Changelist" comment="Submit module 1 assignments (Variable, data type and operator - Practice)">
-      <change afterPath="$PROJECT_DIR$/Variable, Data type, Operator/Exercise/CalculatorApp/CalculatorApp.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Variable, Data type, Operator/Exercise/CalculatorApp/CalculatorApp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Variable, Data type, Operator/Exercise/CalculatorApp/CalculatorApp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_1/Practice/CheckLeapYear/CheckLeapYear.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_1/Practice/CheckLeapYear/CheckLeapYear.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_1/Practice/If-Else-If/If-Else-If.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_1/Practice/If-Else-If/If-Else-If.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_1/Practice/If-Else/If-Else.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_1/Practice/If-Else/If-Else.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_1/Practice/Switch-Case/Switch-Case.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_1/Practice/Switch-Case/Switch-Case.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Variable, Data type, Operator/Exercise/CalculatorApp/CalculatorApp.css" beforeDir="false" afterPath="$PROJECT_DIR$/Variable, Data type, Operator/Exercise/CalculatorApp/CalculatorApp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Variable, Data type, Operator/Exercise/CalculatorApp/CalculatorApp.html" beforeDir="false" afterPath="$PROJECT_DIR$/Variable, Data type, Operator/Exercise/CalculatorApp/CalculatorApp.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +41,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -84,6 +91,7 @@
       <workItem from="1660310825106" duration="2847000" />
       <workItem from="1660362031663" duration="4010000" />
       <workItem from="1660367089391" duration="3508000" />
+      <workItem from="1660397149260" duration="7457000" />
     </task>
     <task id="LOCAL-00001" summary="Submit module 1 assignments (Variable, data type and operator - Practice)">
       <created>1660296247945</created>
@@ -115,6 +123,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Submit module 1 assignments (Variable, data type and operator - Practice)" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="499" y="155" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1660397881172">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="499" y="155" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.816@0.0.1536.816" timestamp="1660397881172" />
     <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1660362279319">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
