@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a71d6b61-70ab-42bf-9b37-3ea046745843" name="Default Changelist" comment="Submit module 1 assignments (Variable, data type and operator - Practice)">
-      <change afterPath="$PROJECT_DIR$/ConditionalStructure_1/Practice/TernaryOperator/TernaryOperator.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConditionalStructure_1/Practice/TernaryOperator/TernaryOperator1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConditionalStructure_1/Practice/TernaryOperator/TernaryOperator2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Practice/KeyboardEvent/KeyboardEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Practice/KeyboardEvent/KeyboardEvent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Practice/MouseEvent/MouseEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Practice/MouseEvent/MouseEvent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +35,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -53,6 +54,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ConditionalStructure_2/Practice/MouseEvent" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -60,6 +62,11 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\CodeGym\Repository\A0722I1-NguyenHuuHuy\Module 1\ConditionalStructure_2\Practice\MouseEvent" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -85,7 +92,8 @@
       <workItem from="1660362031663" duration="4010000" />
       <workItem from="1660367089391" duration="3508000" />
       <workItem from="1660397149260" duration="7457000" />
-      <workItem from="1660481491649" duration="1344000" />
+      <workItem from="1660481491649" duration="3840000" />
+      <workItem from="1660533803057" duration="2273000" />
     </task>
     <task id="LOCAL-00001" summary="Submit module 1 assignments (Variable, data type and operator - Practice)">
       <created>1660296247945</created>
@@ -121,6 +129,10 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="499" y="155" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.816@0.0.1536.816" timestamp="1660397881172" />
+    <state x="549" y="150" key="FileChooserDialogImpl" timestamp="1660483668976">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="150" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1660483668976" />
     <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1660362279319">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
