@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="SimpleCalculator.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="4">
+                <input class="screen" type="text" name="screen" id="screen">
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" name="7" value="7" onclick="getDigit(7)">
+            </td>
+            <td>
+                <input type="button" name="8" value="8" onclick="getDigit(8)">
+            </td>
+            <td>
+                <input type="button" name="9" value="9" onclick="getDigit(9)">
+            </td>
+            <td>
+                <input type="button" name="+" value="+" onclick="getOperator('+')">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" name="4" value="4" onclick="getDigit(4)">
+            </td>
+            <td>
+                <input type="button" name="5" value="5" onclick="getDigit(5)">
+            </td>
+            <td>
+                <input type="button" name="6" value="6" onclick="getDigit(6)">
+            </td>
+            <td>
+                <input type="button" name="-" value="-" onclick="getOperator('-')">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" name="1" value="1" onclick="getDigit(1)">
+            </td>
+            <td>
+                <input type="button" name="2" value="2" onclick="getDigit(2)">
+            </td>
+            <td>
+                <input type="button" name="3" value="3" onclick="getDigit(3)">
+            </td>
+            <td>
+                <input type="button" name="*" value="*" onclick="getOperator('*')">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" name="C" value="C" onclick="cancel()">
+            </td>
+            <td>
+                <input type="button" name="0" value="0" onclick="getDigit(0)">
+            </td>
+            <td>
+                <input type="button" name="=" value="=" onclick="solve()">
+            </td>
+            <td>
+                <input type="button" name="/" value="/" onclick="getOperator('/')">
+            </td>
+        </tr>
+    </table>
+    <script src="SimpleCalculator.js"></script>
+</body>
+</html>

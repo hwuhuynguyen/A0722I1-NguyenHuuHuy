@@ -20,11 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a71d6b61-70ab-42bf-9b37-3ea046745843" name="Default Changelist" comment="Submit module 1 assignments (Variable, data type and operator - Practice)">
-      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Practice/KeyboardEvent/KeyboardEvent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Practice/KeyboardEvent/KeyboardEvent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Practice/MouseEvent/MouseEvent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Practice/MouseEvent/MouseEvent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/BodyMassIndex/BodyMassIndex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/BodyMassIndex/BodyMassIndex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/DoYouLoveMe/DoYouLoveMe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/DoYouLoveMe/DoYouLoveMe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/SimpleCalculator/SimpleCalculator.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/SimpleCalculator/SimpleCalculator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/SimpleCalculator/SimpleCalculator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/Switch-Case/Switch-Case.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/Switch-Case/Switch-Case.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Git and HTML/Exercise/CreateSimpleList.html" beforeDir="false" afterPath="$PROJECT_DIR$/Git and HTML/Exercise/CreateSimpleList.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +60,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/ConditionalStructure_2/Practice/MouseEvent" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -62,6 +70,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -93,7 +102,11 @@
       <workItem from="1660367089391" duration="3508000" />
       <workItem from="1660397149260" duration="7457000" />
       <workItem from="1660481491649" duration="3840000" />
-      <workItem from="1660533803057" duration="2273000" />
+      <workItem from="1660533803057" duration="7720000" />
+      <workItem from="1660551152479" duration="404000" />
+      <workItem from="1660551595682" duration="2377000" />
+      <workItem from="1660560612591" duration="6068000" />
+      <workItem from="1660622407223" duration="814000" />
     </task>
     <task id="LOCAL-00001" summary="Submit module 1 assignments (Variable, data type and operator - Practice)">
       <created>1660296247945</created>
@@ -133,9 +146,13 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="549" y="150" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1660483668976" />
-    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1660362279319">
+    <state x="441" y="29" key="SettingsEditor" timestamp="1660622826183">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1660362279319" />
+    <state x="441" y="29" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1660622826183" />
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1660539253558">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1660539253558" />
   </component>
 </project>
