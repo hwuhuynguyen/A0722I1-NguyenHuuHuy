@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 04</title>
+</head>
+<body>
+    <script> // enter three integers and find the maximum value of them
+        let inputFirstNumber = prompt('Enter the first number:');
+        let inputSecondNumber = prompt('Enter the second number:');
+        let inputThirdNumber = prompt('Enter the third number:');
+
+        let firstNumber = parseInt(inputFirstNumber);
+        let secondNumber = parseInt(inputSecondNumber);
+        let thirdNumber = parseInt(inputThirdNumber);
+
+        let maximumValue = firstNumber;
+        if ((maximumValue < secondNumber) || (maximumValue < thirdNumber)) {
+            if (secondNumber > thirdNumber){
+                maximumValue = secondNumber;
+            } else {
+                maximumValue = thirdNumber;
+            }
+        }
+        alert('The maximum value of three numbers is: ' + maximumValue);
+    </script>
+</body>
+</html>

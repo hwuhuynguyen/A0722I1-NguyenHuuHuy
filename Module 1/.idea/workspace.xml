@@ -20,18 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a71d6b61-70ab-42bf-9b37-3ea046745843" name="Default Changelist" comment="Submit module 1 assignments (Variable, data type and operator - Practice)">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/BodyMassIndex/BodyMassIndex.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/BodyMassIndex/BodyMassIndex.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/DoYouLoveMe/DoYouLoveMe.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/DoYouLoveMe/DoYouLoveMe.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/SimpleCalculator/SimpleCalculator.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/SimpleCalculator/SimpleCalculator.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/SimpleCalculator/SimpleCalculator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/Switch-Case/Switch-Case.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/Switch-Case/Switch-Case.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/PracticeConditionalStructure01/Exercise01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/PracticeConditionalStructure01/Exercise02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/PracticeConditionalStructure01/Exercise03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/PracticeConditionalStructure01/Exercise04.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/PracticeConditionalStructure02/Exercise01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/PracticeConditionalStructure02/Exercise02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/PracticeConditionalStructure02/Exercise03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/PracticeConditionalStructure02/Exercise04.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/PracticeConditionalStructure02/Exercise05.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/PracticeConditionalStructure02/Exercise06.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Git and HTML/Exercise/CreateSimpleList.html" beforeDir="false" afterPath="$PROJECT_DIR$/Git and HTML/Exercise/CreateSimpleList.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +105,7 @@
       <workItem from="1660551152479" duration="404000" />
       <workItem from="1660551595682" duration="2377000" />
       <workItem from="1660560612591" duration="6068000" />
-      <workItem from="1660622407223" duration="814000" />
+      <workItem from="1660622407223" duration="9160000" />
     </task>
     <task id="LOCAL-00001" summary="Submit module 1 assignments (Variable, data type and operator - Practice)">
       <created>1660296247945</created>
