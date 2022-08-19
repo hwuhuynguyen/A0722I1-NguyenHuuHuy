@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 09</title>
+</head>
+<body>
+    <h1>Check if three real numbers are sides of a triangle</h1>
+    <div>
+        <label>Value of first number: </label>
+        <input type="text" id="first" name="first"> <br/><br/>
+        <label>Value of second number: </label>
+        <input type="text" id="second" name="second"> <br/><br/>
+        <label>Value of third number: </label>
+        <input type="text" id="third" name="third"> <br/><br/>
+        <input type="button" onclick="check3SidesOfTriangle(parseInt(document.getElementById('first').value),
+            parseInt(document.getElementById('second').value), parseInt(document.getElementById('third').value))" value="Check"> <br/>
+    </div>
+    <label id="result"></label>
+
+    <script> //check if three real numbers are sides of a triangle
+        function checkSideOfTriangle(firstNumber, secondNumber, thirdNumber) {
+            return (firstNumber + secondNumber) > thirdNumber;
+        }
+        function check3SidesOfTriangle(firstNumber, secondNumber, thirdNumber) {
+            if (firstNumber > 0 && secondNumber > 0 && thirdNumber > 0) {
+                if (checkSideOfTriangle(firstNumber, secondNumber, thirdNumber) && checkSideOfTriangle(secondNumber, thirdNumber, firstNumber)
+                && checkSideOfTriangle(thirdNumber, firstNumber, secondNumber)) {
+                    document.getElementById('result').innerText = 'Three numbers are sides of a triangle';
+                } else {
+                    document.getElementById('result').innerText = 'Three numbers are NOT sides of a triangle';
+                }
+            } else {
+                document.getElementById('result').innerText = 'Three numbers must be larger than 0, please type again';
+            }
+        }
+    </script>
+</body>
+</html>

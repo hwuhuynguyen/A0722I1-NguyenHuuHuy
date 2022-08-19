@@ -20,17 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a71d6b61-70ab-42bf-9b37-3ea046745843" name="Default Changelist" comment="Submit module 1 assignments (Variable, data type and operator - Practice)">
-      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/PracticeConditionalStructure01/Exercise01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/PracticeConditionalStructure01/Exercise02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/PracticeConditionalStructure01/Exercise03.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/PracticeConditionalStructure01/Exercise04.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/PracticeConditionalStructure02/Exercise01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/PracticeConditionalStructure02/Exercise02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/PracticeConditionalStructure02/Exercise03.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/PracticeConditionalStructure02/Exercise04.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/PracticeConditionalStructure02/Exercise05.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/PracticeConditionalStructure02/Exercise06.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/PracticeConditionalStructure02/Exercise07.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/PracticeConditionalStructure02/Exercise08.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/PracticeConditionalStructure02/Exercise09.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/DoYouLoveMe/DoYouLoveMe.html" beforeDir="false" afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/DoYouLoveMe/DoYouLoveMe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/DoYouLoveMe/DoYouLoveMe.js" beforeDir="false" afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/DoYouLoveMe/DoYouLoveMe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/PracticeConditionalStructure02/Exercise06.html" beforeDir="false" afterPath="$PROJECT_DIR$/ConditionalStructure_2/Exercise/PracticeConditionalStructure02/Exercise06.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +102,7 @@
       <workItem from="1660551595682" duration="2377000" />
       <workItem from="1660560612591" duration="6068000" />
       <workItem from="1660622407223" duration="9160000" />
+      <workItem from="1660733150050" duration="6334000" />
     </task>
     <task id="LOCAL-00001" summary="Submit module 1 assignments (Variable, data type and operator - Practice)">
       <created>1660296247945</created>

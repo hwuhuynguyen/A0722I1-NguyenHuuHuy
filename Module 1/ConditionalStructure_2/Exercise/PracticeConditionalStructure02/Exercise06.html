@@ -5,8 +5,34 @@
     <title>Exercise 06</title>
 </head>
 <body>
+    <form>
+        <h1>Solve the linear equation (Ax + B = 0)</h1>
+        <div>
+            <label>Value of A: </label>
+            <input type="text" id="a" name="a"> <br/><br/>
+            <label>Value of B: </label>
+            <input type="text" id="b" name="b"> <br/><br/>
+            <input type="button" onclick="solveLinearEquation(parseInt(document.getElementById('a').value), parseInt(document.getElementById('b').value))"
+                   value="Solve the equation"> <br/>
+        </div>
+        <label id="result"></label>
+    </form>
     <script> //solve the linear equation
-        
+    // let a = parseInt(document.getElementById('a').value);
+    // let b = parseInt(document.getElementById('b').value);
+        function solveLinearEquation(a, b) {
+            let result;
+            if (a == 0) {
+                if (b == 0) {
+                    document.getElementById('result').innerText = 'This equation has infinite solutions';
+                } else {
+                    document.getElementById('result').innerText = 'This equation has no solution';
+                }
+            } else {
+                result = -b / a;
+                document.getElementById('result').innerText = 'The solution of this equation is: x = ' + result;
+            }
+        }
     </script>
 </body>
 </html>

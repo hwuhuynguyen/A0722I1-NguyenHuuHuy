@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 07</title>
+</head>
+<body>
+    <form>
+        <h1>Solve the quadratic equation (Ax<sup>2</sup> + Bx + C = 0)</h1>
+        <div>
+            <label>Value of A: </label>
+            <input type="text" id="a" name="a"> <br/><br/>
+            <label>Value of B: </label>
+            <input type="text" id="b" name="b"> <br/><br/>
+            <label>Value of C: </label>
+            <input type="text" id="c" name="c"> <br/><br/>
+            <input type="button" onclick="solveQuadraticEquation(parseInt(document.getElementById('a').value),
+            parseInt(document.getElementById('b').value), parseInt(document.getElementById('c').value))" value="Solve the equation"> <br/>
+        </div>
+        <label id="result"></label>
+    </form>
+    <script> //solve the quadratic equation
+        function solveLinearEquation(a, b) {
+            let result;
+            if (a == 0) {
+                if (b == 0) {
+                    document.getElementById('result').innerText = 'This equation has infinite solutions';
+                } else {
+                    document.getElementById('result').innerText = 'This equation has no solution';
+                }
+            } else {
+                result = -b / a;
+                document.getElementById('result').innerText = 'The solution of this equation is: x = ' + result;
+            }
+        }
+        function solveQuadraticEquation(a, b, c) {
+            let result;
+            let delta;
+            if (a == 0) {
+                solveLinearEquation(b, c);
+            } else {
+                delta = Math.pow(b, 2) - 4*a*c;
+                if (delta < 0) {
+                    document.getElementById('result').innerText = 'This equation has no solution';
+                } else {
+                    if (delta == 0) {
+                        result = -b / (2*a);
+                        document.getElementById('result').innerText = 'This equation has double root: x1 = x2 = ' + result;
+                    } else {
+                        let x1 = (-b + Math.sqrt(delta)) / (2*a);
+                        let x2 = (-b - Math.sqrt(delta)) / (2*a);
+                        document.getElementById('result').innerText = 'This equation has two solutions: x1 = ' + x1 + ', x2 = ' + x2;
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
