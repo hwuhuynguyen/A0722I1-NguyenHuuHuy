@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 06</title>
+</head>
+<body>
+    <h1>Calculate the commission received depending on the level of sales</h1>
+    <div>
+        <pre>
+            5% if total sales are less than or equal to 100 million (VND).
+            10% if total sales are less than or equal to 300 million (VND).
+            20% if total sales is greater than 300 million (VND).
+        </pre>
+        <label>Enter the total sales (VND): </label>
+        <input type="text" id="sales" name="sales"> <br/><br/>
+        <input type="button" onclick="calculateCommissionReceived(parseFloat(document.getElementById('sales').value))"
+               value="Calculate the commission received"> <br/>
+    </div>
+    <label id="result"></label>
+
+    <script>
+        /** calculate the commission received depending on the level of sales
+         *  5% if total sales are less than or equal to 100 million.
+         *  10% if total sales are less than or equal to 300 million.
+         *  20% if total sales is greater than 300 million.
+         */
+        let rate;
+        let commissionReceived;
+
+        function calculateCommissionReceived(sales) {
+            if (sales >= 300000000) {
+                rate = 0.2;
+            } else if (sales >= 100000000) {
+                rate = 0.1;
+            } else {
+                rate = 0.05;
+            }
+            commissionReceived = sales * rate;
+            document.getElementById('result').innerHTML = 'Commission rate: ' + rate*100 +
+                '% <br/>Commission received depending on the level of sales: ' +
+                Intl.NumberFormat('it-IT', { style: 'currency', currency: 'VND' }).format(commissionReceived);
+        }
+    </script>
+</body>
+</html>

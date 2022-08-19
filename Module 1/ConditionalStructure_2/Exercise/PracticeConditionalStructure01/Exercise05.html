@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 05</title>
+</head>
+<body>
+    <h1>Rank students' academic performance based on test score, midterm score, and final exam score</h1>
+    <div>
+        <label>Enter the test score: </label>
+        <input type="text" id="test" name="test"> <br/><br/>
+        <label>Enter the midterm score: </label>
+        <input type="text" id="midterm" name="midterm"> <br/><br/>
+        <label>Enter the final exam score: </label>
+        <input type="text" id="final-exam" name="final-exam"> <br/><br/>
+        <input type="button" onclick="rankStudentsBaseOnScores(parseFloat(document.getElementById('test').value),
+                    parseFloat(document.getElementById('midterm').value), parseFloat(document.getElementById('final-exam').value))" value="Check"> <br/>
+    </div>
+    <label id="result"></label>
+    <script>
+        /** rank students' academic performance based on test score, midterm score, and final exam score
+         *  averageScore = (testScore x 2 + midtermScore x 3 + final-examScore x 5)/10
+         *  if (averageScore >= 8.0)            => rank A
+         *  if (averageScore >= 6.0 and < 8.0)  => rank B
+         *  if (averageScore >= 4.0 and < 6.0)  => rank C
+         *  if (averageScore < 4.0)             => rank D
+         */
+
+        let averageScore;
+        let rank;
+        function rankStudentsBaseOnScores(test, midterm, final) {
+            averageScore = (test*2 + midterm*3 + final*5)/10;
+            if (averageScore >= 8) {
+                rank = 'A';
+            } else if (averageScore >= 6) {
+                rank = 'B';
+            } else if (averageScore >= 4) {
+                rank = 'C';
+            } else {
+                rank = 'D';
+            }
+            document.getElementById('result').innerHTML = 'Average score: ' + averageScore + '<br/>Rank: ' + rank;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 10</title>
+</head>
+<body>
+    <h1>Calculate the electricity bill</h1>
+    <div>
+            <pre>
+                - 1.000 VND for each kWh of the first 100 kWh
+                - 1.200 VND for each kWh of the next 50 kWh
+                - 2.000 VND for each kWh of the kWh from 151 to 200
+                - 2.500 VND for any kWh after the first 200 kWh
+            </pre>
+        <label>Enter the total kWh used: </label>
+        <input type="text" id="kWh" name="kWh"> <br/><br/>
+        <input type="button" onclick="calculateElectricityBill(parseFloat(document.getElementById('kWh').value))"
+               value="Calculate the electricity bill"> <br/>
+    </div>
+    <label id="result"></label>
+
+    <script>
+        /** calculate the electricity bill
+         *  1.000 VND for each kWh of the first 100 kWh
+         *  1.200 VND for each kWh of the next 50 kWh
+         *  2.000 VND for each kWh of the kWh from 151 to 200
+         *  2.500 VND for any kWh after the first 200 kWh
+         */
+
+        function calculateElectricityBill(kWh) {
+            let totalMoney;
+            if (kWh <= 100) {
+                totalMoney = 1000*kWh;
+            } else if (kWh <= 150) {
+                totalMoney = 1000*100 + 1200*(kWh - 100);
+            } else if (kWh <= 200) {
+                totalMoney = 1000*100 + 1200*50 + 2000*(kWh - 150);
+            } else {
+                totalMoney = 1000*100 + 1200*50 + 2000*50 + 2500*(kWh - 200);
+            }
+            document.getElementById('result').innerText = 'Total money the household have to pay: ' +
+                Intl.NumberFormat('it-IT', { style: 'currency', currency: 'VND' }).format(totalMoney);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 11</title>
+</head>
+<body>
+    <h1>Calculate the personal income tax</h1>
+    <div>
+        <pre>
+            level 1: under 8 million VND/month 5%;
+            level 2: 8-24 million VND/month: 15%;
+            level 3: 24-84 million VND/month: 25%;
+            level 4: over 84 million VND: 35%.
+        </pre>
+        <label>Enter your personal income per month (VND): </label>
+        <input type="text" id="income" name="income"> <br/><br/>
+        <input type="button" onclick="calculatePersonalIncomeTax(parseFloat(document.getElementById('income').value))"
+               value="Calculate the personal income tax"> <br/>
+    </div>
+    <label id="result"></label>
+    <script>
+        /** calculate the tax depending on the level of personal income
+         *  level 1: under 8 million VND/month 5%;
+         *  level 2: 8-24 million VND/month: 15%;
+         *  level 3: 24-84 million VND/month: 25%;
+         *  level 4: over 84 million VND: 35%.
+         */
+
+        function calculatePersonalIncomeTax(income) {
+            let tax;
+            let taxRate;
+            if (income <= 8000000) {
+                taxRate = 0.05;
+            } else if (income <= 24000000) {
+                taxRate = 0.15;
+            } else if (income <= 84000000) {
+                taxRate = 0.25;
+            } else {
+                taxRate = 0.35;
+            }
+            tax = income*taxRate;
+            document.getElementById('result').innerText = 'Total income tax have to pay: ' +
+                Intl.NumberFormat('it-IT', { style: 'currency', currency: 'VND' }).format(tax);
+        }
+    </script>
+</body>
+</html>

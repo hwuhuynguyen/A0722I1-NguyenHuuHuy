@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 12</title>
+</head>
+<body>
+    <h1>Calculate the bank interest</h1>
+    <div>
+        <label>Enter your initial amount (VND): </label>
+        <input type="text" id="amount" name="amount"> <br/><br/>
+        <label>Enter the number of loan months: </label>
+        <input type="text" id="months" name="months"> <br/><br/>
+        <label>Enter the monthly interest rate (%): </label>
+        <input type="text" id="interestRate" name="interestRate"> <br/><br/>
+        <input type="button" onclick="calculateBankInterest(parseFloat(document.getElementById('amount').value),
+        parseFloat(document.getElementById('months').value), parseFloat(document.getElementById('interestRate').value))"
+               value="Calculate the bank interest"> <br/>
+    </div>
+    <label id="result"></label>
+
+    <script>
+        /** calculate bank interest (parental interest) when knowing:
+         *  - the initial amount (VND)
+         *  - the number of loan months
+         *  - and the monthly interest rate (%)
+         */
+
+        function calculateBankInterest(initialAmount, months, interestRate) {
+            let bankInterest;
+            bankInterest = initialAmount * Math.pow((1 + interestRate/100), months);
+            document.getElementById('result').innerText = 'Bank interest: ' +
+                Intl.NumberFormat('it-IT', { style: 'currency', currency: 'VND' }).format(bankInterest);;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 07</title>
+</head>
+<body>
+    <h1>Calculate phone charges for a household with given parameters</h1>
+
+    <div>
+        <pre>
+            - mandatory subscription fee is 25.000 VND.
+            - 600 VND for each call of the first 50 minutes.
+            - 400 VND for each calling minute of the next 150 minutes.
+            - 200 VND for any every minute after the first 200 minutes
+        </pre>
+        <label>Enter the total minutes used: </label>
+        <input type="text" id="minutes" name="minutes"> <br/><br/>
+        <input type="button" onclick="calculatePhoneCharges(parseFloat(document.getElementById('minutes').value))"
+               value="Calculate the phone charges"> <br/>
+    </div>
+    <label id="result"></label>
+    <script>
+        /** calculate phone charges for a household with given parameters
+         *  mandatory subscription fee is 25.000 VND.
+         *  600 VND for each call of the first 50 minutes.
+         *  400 VND for each calling minute of the next 150 minutes.
+         *  200 VND for any every minute after the first 200 minutes
+         */
+
+        function calculatePhoneCharges(minutes) {
+            let totalMoney = 25000;
+            if (minutes <= 50) {
+                totalMoney += 600*minutes;
+            } else if (minutes <= 200) {
+                totalMoney += 600*50 + 400*(minutes - 50);
+            } else {
+                totalMoney += 600*50 + 400*150 + 200*(minutes - 200);
+            }
+            document.getElementById('result').innerText = 'Total money the household have to pay: ' +
+                Intl.NumberFormat('it-IT', { style: 'currency', currency: 'VND' }).format(totalMoney);
+        }
+    </script>
+</body>
+</html>
