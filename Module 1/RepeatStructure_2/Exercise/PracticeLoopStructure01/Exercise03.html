@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 03</title>
+</head>
+<body>
+    <script> //display the first 20 Fibonacci numbers
+        let count;
+        let num1 = 1;
+        let num2 = 1;
+        let num;
+        document.write(num1 + " " + num2 + " ");
+        for (count = 3; count <= 20; count++) {
+            num = num1 + num2;
+            num1 = num2;
+            num2 = num;
+            document.write(num + " ");
+        }
+    </script>
+</body>
+</html>

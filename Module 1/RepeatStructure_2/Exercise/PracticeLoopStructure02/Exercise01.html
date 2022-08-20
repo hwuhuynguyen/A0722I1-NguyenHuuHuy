@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 01</title>
+</head>
+<body>
+    <script> //display the sequence of Fibonacci numbers
+        let count;
+        let num1 = 1;
+        let num2 = 1;
+        let num;
+        let inputNum = parseInt(prompt('How many Fibonacci numbers you want to print: '));
+        document.write(num1 + " " + num2 + " ");
+        for (count = 3; count <= inputNum; count++) {
+            num = num1 + num2;
+            num1 = num2;
+            num2 = num;
+            document.write(num + " ");
+        }
+    </script>
+</body>
+</html>

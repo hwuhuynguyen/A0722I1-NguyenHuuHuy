@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 07</title>
+</head>
+<body>
+    <script>
+        /** display the numbers from 1 to 100
+         *  if that number divided by 3, display 'Fizz' instead of that number
+         *  if that number divided by 5, display 'Buzz' instead of that number
+         *  if that number divided by both 3 and 5, display 'FizzBuzz' instead of that number
+         */
+
+        let i;
+        for (i = 1; i <= 100; i++) {
+            if (i % 3 == 0 || i % 5 == 0) {
+                if (i % 3 == 0 && i % 5 == 0) {
+                    document.write('FizzBuzz' + " ");
+                } else if (i % 3 == 0) {
+                    document.write('Fizz' + " ");
+                } else {
+                    document.write('Buzz' + " ");
+                }
+            } else {
+                document.write(i + " ");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>While loop</title>
+</head>
+<body>
+    <script>
+        //Exercise 01
+        let num = prompt("Enter a number: ");
+        let total = 0;
+        while( num != -1 ) {
+            num = parseInt(prompt("Enter a number: "));
+            alert(num);
+            total += num;
+        }
+        document.write(total);
+
+        //Exercise 02
+        let i = 1;
+        while (i < 100) {
+            document.write("<hr width = " + i + "%>");
+            i++;
+        }
+    </script>
+</body>
+</html>

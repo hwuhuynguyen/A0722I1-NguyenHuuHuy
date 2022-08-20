@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiplication Table</title>
+</head>
+<body>
+    <script language="JavaScript">
+        let sourceOut;
+        let i, j;
+        sourceOut = "<table border = '1px solid black' width=100%>";
+        for (i = 2; i < 10; i++) {
+            sourceOut += "<tr>";
+            for (j = 1; j < 10; j++) {
+                sourceOut += "<td>" + i + " x " + j + " = " + i*j + "</td>";
+            }
+            sourceOut += "</tr>";
+        }
+        sourceOut += "</table>";
+        document.write(sourceOut);
+    </script>
+</body>
+</html>

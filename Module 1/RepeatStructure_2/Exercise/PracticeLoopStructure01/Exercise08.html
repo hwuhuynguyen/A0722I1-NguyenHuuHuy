@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 08</title>
+</head>
+<body>
+    <button type="button" id="play" onclick="playGuessingGame()">PLAY</button>
+    <script>
+        function playGuessingGame() {
+            let i;
+            let inputStartingNumber = parseInt(prompt('Enter the starting number:'));
+            let inputEndingNumber = parseInt(prompt('Enter the ending number (must be larger than starting number):'));
+            let randomNumber = Math.floor(Math.random() * (inputEndingNumber - inputStartingNumber + 1) + inputStartingNumber);
+            console.log(randomNumber);
+            for (i = 0; i < 3; i++) {
+                let guessNumber = parseInt(prompt('Please guess the number: '));
+                if (guessNumber == randomNumber) {
+                    alert('Congratulations!!');
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

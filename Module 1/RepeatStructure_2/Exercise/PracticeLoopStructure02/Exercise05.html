@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Exercise 12</title>
+    <title>Exercise 05</title>
 </head>
 <body>
-    <h1>Calculate the bank interest (Use conditional structure)</h1>
+    <h1>Calculate the bank interest (Use loop structure)</h1>
     <div>
         <label>Enter your initial amount (VND): </label>
         <input type="text" id="amount" name="amount"> <br/><br/>
@@ -14,7 +14,7 @@
         <label>Enter the monthly interest rate (%): </label>
         <input type="text" id="interestRate" name="interestRate"> <br/><br/>
         <input type="button" onclick="calculateBankInterest(parseFloat(document.getElementById('amount').value),
-        parseFloat(document.getElementById('months').value), parseFloat(document.getElementById('interestRate').value))"
+            parseFloat(document.getElementById('months').value), parseFloat(document.getElementById('interestRate').value))"
                value="Calculate the bank interest"> <br/>
     </div>
     <label id="result"></label>
@@ -27,7 +27,10 @@
          */
 
         function calculateBankInterest(initialAmount, months, interestRate) {
-            let bankInterest;
+            let bankInterest = initialAmount;
+            for (let i = 1; i <= months; i++) {
+                bankInterest *= (1+interestRate/100);
+            }
             bankInterest = initialAmount * Math.pow((1 + interestRate/100), months);
             document.getElementById('result').innerText = 'Bank interest: ' +
                 Intl.NumberFormat('it-IT', { style: 'currency', currency: 'VND' }).format(bankInterest);

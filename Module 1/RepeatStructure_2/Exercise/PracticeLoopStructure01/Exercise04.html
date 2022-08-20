@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 04</title>
+</head>
+<body>
+    <script> //display the first Fibonacci number divided by 5
+    let count, num, check = false;
+    let num1 = 1;
+    let num2 = 1;
+    while (!check) {
+        num = num1 + num2;
+        num1 = num2;
+        num2 = num;
+        if (num % 5 == 0) {
+            document.write(num);
+            check = true;
+        }
+    }
+    </script>
+</body>
+</html>

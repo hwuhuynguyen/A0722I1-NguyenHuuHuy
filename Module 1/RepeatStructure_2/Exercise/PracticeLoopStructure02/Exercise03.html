@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 03</title>
+</head>
+<body>
+    <script> //draw right-triangles
+        let i;
+        let j;
+        for (i = 0; i < 10; i++) {
+            for (j = 0; j < 10; j++) {
+                if (i >= j)
+                    document.write('*');
+                else
+                    document.write('&nbsp');
+            }
+            document.write("<br/>")
+        }
+        document.write("<br/>");
+        for (i = 0; i < 10; i++) {
+            for (j = 0; j < 10; j++) {
+                if (i+j < 10)
+                    document.write('*');
+                else
+                    document.write('&nbsp&nbsp');
+            }
+            document.write("<br/>")
+        }
+        document.write("<br/>");
+
+
+
+        for (i = 0; i < 10; i++) {
+            for (j = 0; j < 10; j++) {
+                if (i+j < 9)
+                    document.write('&nbsp&nbsp');
+                else
+                    document.write('*');
+            }
+            document.write("<br/>")
+        }
+        document.write("<br/>");
+        for (i = 0; i < 10; i++) {
+            for (j = 0; j < 10; j++) {
+                if (i <= j)
+                    document.write('*');
+                else
+                    document.write('&nbsp&nbsp');
+            }
+            document.write("<br/>")
+        }
+        document.write("<br/>");
+
+
+    </script>
+</body>
+</html>

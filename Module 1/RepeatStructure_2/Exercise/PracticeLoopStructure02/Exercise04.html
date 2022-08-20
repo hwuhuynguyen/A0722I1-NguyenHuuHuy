@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 04</title>
+</head>
+<body>
+    <script> //draw rectangles
+        let width = parseInt(prompt('Enter the width of rectangle:'))
+        let height = parseInt(prompt('Enter the height of rectangle:'));
+        for (let i = 0; i <= height; i++) {
+            for (let j = 0; j <= width; j++) {
+                if (i == 0 || i == height || j == 0 || j == width)
+                    document.write('*');
+                else
+                    document.write('&nbsp&nbsp')
+            }
+            document.write('<br/>')
+        }
+    </script>
+</body>
+</html>

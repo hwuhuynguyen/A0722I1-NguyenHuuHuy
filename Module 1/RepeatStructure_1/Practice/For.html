@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For loop</title>
+</head>
+<body>
+    <h2>JavaScript Loops</h2>
+    <p id="demo"></p>
+    <script>
+        // Exercise 01
+        let text = "";
+        let i;
+        for (i = 0; i < 5; i++) {
+            text += "The number is " + i + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+
+        // Exercise 02
+        let num = prompt('Enter your number: ');
+        let total = 0;
+        let j = 1;
+        for (; j <= num; j +=1) {
+            total += j;
+        }
+        alert(total);
+
+    </script>
+</body>
+</html>
