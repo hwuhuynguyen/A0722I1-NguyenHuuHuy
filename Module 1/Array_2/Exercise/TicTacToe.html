@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <p id="CaroGame" />
+    <input type="button" value="Player 01" onclick="changeValue(1)">
+    <input type="button" value="Player 02" onclick="changeValue(2)">
+
+    <script>
+        let b = document.getElementById("CaroGame");
+
+        let board = [];
+        let data = "";
+        for (let i = 0; i < 5; i++) {
+            board[i] = new Array('(.)', '(.)', '(.)', '(.)', '(.)');
+        }
+
+        for (let i = 0; i < 5; i++) {
+            data += "<br/>";
+            for (let j = 0; j < 5; j++) {
+                data += board[i][j] + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+            }
+        }
+
+        data += "<br/><br/><input type='button' value='Player 01' onclick='changeValue(1)'>"
+        data += "<br/><br/><input type='button' value='Player 02' onclick='changeValue(2)'>"
+
+        b.innerHTML = data;
+
+        function changeValue(char) {
+            let positionX = prompt("X: ");
+            let positionY = prompt("Y: ");
+            data = "";
+            if (char == 1 && board[positionX][positionY] != ' O')
+                board[positionX][positionY] = "X";
+            if (char == 2 && board[positionX][positionY] != 'X')
+                board[positionX][positionY] = " O";
+
+            for (let i = 0; i < 5; i++) {
+                data += "<br/>";
+                for (let j = 0; j < 5; j++) {
+                    data += board[i][j] + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+                }
+            }
+            data += "<br/><br/><input type='button' value='Player 01' onclick='changeValue(1)'>"
+            data += "<br/><br/><input type='button' value='Player 02' onclick='changeValue(2)'>"
+
+            b.innerHTML = "<hr/>" + data;
+        }
+
+    </script>
+</body>
+</html>

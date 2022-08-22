@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 06</title>
+</head>
+<body>
+    <script> //check if V is in the array or not
+        let arr = [1, 11, 12, 3, 41, 15, 17, 8, 9, 10];
+        let check = false;
+        let index = -1;
+        let V = parseInt(prompt('Enter a number: '));
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] == V) {
+                check = true;
+                index = i;
+            }
+        }
+        console.log('Initial array: ' + arr.join(' '));
+        if (check) {
+            alert('V is in the array, at position: ' + index);
+        } else {
+            alert('V is not in the array');
+        }
+    </script>
+</body>
+</html>

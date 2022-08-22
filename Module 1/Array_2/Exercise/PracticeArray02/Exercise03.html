@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 03</title>
+</head>
+<body>
+    <script> //count the numbers in array
+        let arr = [ 'c', 's', 'c', '2', '633', '2323.9' ];
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            let check = Number(arr[i]);
+            if (!isNaN(check)) {
+                count++;
+                console.log(arr[i]);
+            }
+        }
+        console.log('Initial array: ' + arr.join(' '));
+        console.log(count + ' numbers in array');
+    </script>
+</body>
+</html>

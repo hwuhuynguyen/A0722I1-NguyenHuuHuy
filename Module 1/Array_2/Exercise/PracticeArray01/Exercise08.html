@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 08</title>
+</head>
+<body>
+    <script> //sort the array
+        let arr = [1, 11, 12, 3, 41, 15, 17, 8, 9, 10];
+        let temp;
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = i; j < arr.length; j++) {
+                if (arr[i] <= arr[j]) {
+                    temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+        console.log('Sorted array: ' + arr.join(' '));
+    </script>
+</body>
+</html>

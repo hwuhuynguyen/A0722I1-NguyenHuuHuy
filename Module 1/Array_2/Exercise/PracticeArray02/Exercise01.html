@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 01</title>
+</head>
+<body>
+    <script> //2-dimensional array
+        let a = [
+            [1, 2, 1, 24],
+            [8, 11, 9, 4],
+            [7, 0, 7, 27],
+            [7, 4, 28, 14],
+            [3, 10, 26, 7]
+        ];
+        let data = '';
+        for (let i = 0; i < 5; i++) {
+            data += "row " + i + "<br/>";
+            for (let j = 0; j < 4; j++) {
+                data += a[i][j] + "<br/>";
+            }
+        }
+        document.write(data);
+    </script>
+</body>
+</html>

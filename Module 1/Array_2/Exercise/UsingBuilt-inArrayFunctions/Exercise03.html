@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 03</title>
+</head>
+<body>
+    <script> //swap the case of each character of a string
+        let string = prompt('Enter a string:');
+        let result = new Array();
+        for (let i = 0; i < string.length; i++) {
+            if (string[i] >= 'a' && string[i] <= 'z') {
+                result.push(string[i].toUpperCase());
+            } else if (string[i] >= 'A' && string[i] <= 'Z') {
+                result.push(string[i].toLowerCase());
+            } else {
+                result.push(string[i]);
+            }
+        }
+        document.write(result.join(''));
+    </script>
+</body>
+</html>

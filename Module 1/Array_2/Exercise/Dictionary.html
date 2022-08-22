@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+</head>
+<body>
+    <h2>Small dictionary</h2>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label>English</label>
+                </td>
+                <td  width="300px">
+                    <input type="text" id="engWord" name="engWord" width="100%">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Vietnamese</label>
+                </td>
+                <td width="300px">
+                    <input type="text" id="vietWord" name="vietWord" width="100%" >
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" id="btnCheck" name="btnCheck" value="Translate into Vietnamese" onclick="translateIntoVietnamese()">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        function translateIntoVietnamese() {
+            let word = document.getElementById('engWord').value;
+            let eng = ['ant', 'bee', 'cow', 'dog', 'elephant'];
+            let viet = ['con kiến', 'con ong', 'con bò', 'con chó', 'con voi'];
+            let index = -1;
+            let result;
+            for (let i = 0; i < eng.length; i++) {
+                if (eng[i] == word) {
+                    index = i;
+                    result = viet[i];
+                    break;
+                }
+            }
+            if (index == -1) {
+                document.getElementById('vietWord').value = 'Cant find the word you want to translate';
+            } else {
+                document.getElementById('vietWord').value = result;
+            }
+        }
+    </script>
+</body>
+</html>

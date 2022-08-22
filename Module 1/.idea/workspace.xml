@@ -20,11 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a71d6b61-70ab-42bf-9b37-3ea046745843" name="Default Changelist" comment="Submit module 1 assignments (Variable, data type and operator - Practice)">
-      <change afterPath="$PROJECT_DIR$/Array_1/Practice/ArrayElement.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Array_1/Practice/CaroSimple.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Array_1/Practice/FindElementsInArray.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Array_1/Practice/FindMaxValue.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Array_1/Practice/ReverseArray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/Dictionary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray01/Exercise01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray01/Exercise02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray01/Exercise03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray01/Exercise04.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray01/Exercise05.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray01/Exercise06.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray01/Exercise07.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray01/Exercise08.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray01/Exercise09.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray02/Exercise01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray02/Exercise02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray02/Exercise03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray02/Exercise04.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray02/Exercise05.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray02/Exercise06.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/TicTacToe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/UsingBuilt-inArrayFunctions/Exercise01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/UsingBuilt-inArrayFunctions/Exercise02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/UsingBuilt-inArrayFunctions/Exercise03.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +120,9 @@
       <workItem from="1660883540018" duration="10480000" />
       <workItem from="1660909285285" duration="9073000" />
       <workItem from="1660999444407" duration="6661000" />
-      <workItem from="1661090235076" duration="1411000" />
+      <workItem from="1661090235076" duration="2051000" />
+      <workItem from="1661141009674" duration="1734000" />
+      <workItem from="1661166129565" duration="10962000" />
     </task>
     <task id="LOCAL-00001" summary="Submit module 1 assignments (Variable, data type and operator - Practice)">
       <created>1660296247945</created>
@@ -149,9 +166,9 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="441" y="29" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1660622826183" />
-    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1660539253558">
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1661172790298">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1660539253558" />
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1661172790298" />
   </component>
 </project>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 02</title>
+</head>
+<body>
+    <script> //find the maximum value in the array and that position
+        let arr = [1, 11, 12, 3, 41, 15, 17, 8, 9, 10];
+        let index = 0;
+        let max = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] >= max) {
+                index = i;
+                max = arr[i];
+            }
+        }
+        console.log('Initial array: ' + arr.join(' '));
+        console.log('Max value: ' + max);
+        console.log('Position: ' + index);
+    </script>
+</body>
+</html>

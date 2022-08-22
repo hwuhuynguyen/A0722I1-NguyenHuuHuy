@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 04</title>
+</head>
+<body>
+    <script> //count the words in a string
+        let str = prompt('Enter a string: ');
+        let count = 0;
+        str.trim();
+        let result = new Array();
+        for (let i = 0; i < str.length; i++) {
+            result.push(str[i]);
+        }
+        result.push(" ");
+        result.unshift(" ");
+        i = 0;
+        while (i < result.length-1) {
+            if (result[i] == ' ' && result[i+1] == ' ')
+                result.splice(i, 1);
+            else i++;
+        }
+
+        for (let i = 0; i < result.length; i++) {
+            if (result[i] == ' ')
+                count++;
+        }
+        console.log(result.join(''));
+        console.log(count-1);
+    </script>
+</body>
+</html>

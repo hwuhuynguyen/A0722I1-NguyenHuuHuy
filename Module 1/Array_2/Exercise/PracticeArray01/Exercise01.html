@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 01</title>
+</head>
+<body>
+    <script> //display how many numbers in that array larger or equal to 10
+        let arr = [1, 11, 12, 3, 41, 15, 17, 8, 9, 10];
+        let result = new Array();
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] >= 10) {
+                count++;
+                result.push(arr[i]);
+            }
+        }
+        console.log('Initial array: ' + arr.join(' '));
+        console.log('Numbers larger or equal to 10: ' + count);
+        console.log('New array: ' + result.join(' '));
+    </script>
+</body>
+</html>

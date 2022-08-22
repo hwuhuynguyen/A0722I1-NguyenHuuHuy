@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 06</title>
+</head>
+<body>
+    <script> //replace the (-) character by (_) character in a string
+        let input = prompt('Enter a string: ');
+        let result = new Array();
+        for (let i = 0; i < input.length; i++) {
+            result.push(input[i]);
+        }
+        for (let i = 0; i < result.length; i++) {
+            if (result[i] == '-') {
+                result[i] = '_';
+            }
+        }
+        console.log(result.join(''));
+    </script>
+</body>
+</html>

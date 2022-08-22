@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 04</title>
+</head>
+<body>
+    <script> //reverse the array
+        let arr = [1, 11, 12, 3, 41, 15, 17, 8, 9, 10];
+        let result = new Array();
+        for (let i = 0; i < arr.length; i++) {
+                result.unshift(arr[i]);
+        }
+        console.log('Initial array: ' + arr.join(' '));
+        console.log('Reverse array: ' + result.join(' '));
+    </script>
+</body>
+</html>

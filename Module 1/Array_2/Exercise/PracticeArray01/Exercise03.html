@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 03</title>
+</head>
+<body>
+    <script> //display the maximum value of the array, and calculate the average value of that array
+        let arr = [1, 11, 12, 3, 41, 15, 17, 8, 9, 10];
+        let max = arr[0];
+        let index = 0;
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] >= max) {
+                index = i;
+                max = arr[i];
+            }
+            sum += arr[i];
+        }
+        console.log('Initial array: ' + arr.join(' '));
+        console.log('Max value: ' + max);
+        let average = sum/(arr.length);
+        console.log('Average value: ' + average);
+    </script>
+</body>
+</html>
