@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Length converter</title>
+</head>
+<body>
+    <form>
+        <p>
+            <label>Feet(ft): </label>
+            <input type="number" id="feet" oninput="footToMeter(this.value)">
+        </p>
+        <p>
+            <label>Meter(m): </label>
+            <input type="number" id="meter" oninput="meterToFoot(this.value)">
+        </p>
+    </form>
+    <script>
+        function footToMeter(foot) {
+            document.getElementById('meter').value = 0.305 * foot;
+        }
+        function meterToFoot(meter) {
+            document.getElementById('feet').value =  3.279 * meter;
+        }
+    </script>
+</body>
+</html>

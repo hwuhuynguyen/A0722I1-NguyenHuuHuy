@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 03</title>
+</head>
+<body>
+    <script>
+        /** - create a function takes two arguments
+         *  - if the value of the first argument larger than value of the second argument, display a message dialog to the user
+         *    else return the sum of two arguments
+         */
+
+        let inputFirstArgument = parseInt(prompt('Enter the first parameter: '));
+        let inputSecondArgument = parseInt(prompt('Enter the second parameter: '));
+
+        if (inputFirstArgument > inputSecondArgument) {
+            alert('Please try again! The second parameter must be larger than the first parameter')
+        } else {
+            let result = calculateSumOfTwoArguments(inputFirstArgument, inputSecondArgument);
+            alert('Sum of two parameters is: ' + result);
+        }
+        function calculateSumOfTwoArguments(input1, input2) {
+            let result = input1 + input2;
+            return result;
+        }
+    </script>
+</body>
+</html>

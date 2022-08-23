@@ -20,26 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a71d6b61-70ab-42bf-9b37-3ea046745843" name="Default Changelist" comment="Submit module 1 assignments (Variable, data type and operator - Practice)">
-      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/Dictionary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray01/Exercise01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray01/Exercise02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray01/Exercise03.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray01/Exercise04.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray01/Exercise05.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray01/Exercise06.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray01/Exercise07.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray01/Exercise08.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray01/Exercise09.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray02/Exercise01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray02/Exercise02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray02/Exercise03.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray02/Exercise04.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray02/Exercise05.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/PracticeArray02/Exercise06.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/TicTacToe.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/UsingBuilt-inArrayFunctions/Exercise01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/UsingBuilt-inArrayFunctions/Exercise02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Array_2/Exercise/UsingBuilt-inArrayFunctions/Exercise03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Function_1/Practice/CallFunction.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Function_1/Practice/MinimumValue.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Function_1/Practice/TemperatureConverter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Function_2/Exercise/CheckPrimeNumber.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Function_2/Exercise/LengthConverter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Function_2/Exercise/PracticeFunction01/Exercise01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Function_2/Exercise/PracticeFunction01/Exercise02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Function_2/Exercise/PracticeFunction01/Exercise03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Function_2/Exercise/PracticeFunction01/Exercise04.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Function_2/Exercise/PracticeFunction01/Exercise05.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +112,9 @@
       <workItem from="1660999444407" duration="6661000" />
       <workItem from="1661090235076" duration="2051000" />
       <workItem from="1661141009674" duration="1734000" />
-      <workItem from="1661166129565" duration="10962000" />
+      <workItem from="1661166129565" duration="11587000" />
+      <workItem from="1661230323772" duration="4495000" />
+      <workItem from="1661264146122" duration="2945000" />
     </task>
     <task id="LOCAL-00001" summary="Submit module 1 assignments (Variable, data type and operator - Practice)">
       <created>1660296247945</created>
@@ -154,6 +146,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Submit module 1 assignments (Variable, data type and operator - Practice)" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="500" y="210" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1661233734009">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="500" y="210" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.816@0.0.1536.816" timestamp="1661233734009" />
     <state x="499" y="155" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1660397881172">
       <screen x="0" y="0" width="1536" height="816" />
     </state>

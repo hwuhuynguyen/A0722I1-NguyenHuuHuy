@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 02</title>
+</head>
+<body>
+    <form>
+        <input type="number" name="num" id="inputNumber">
+        <input type="button" name="btnIncrease" value="Increase by 1"
+               onclick="increaseBy1(document.getElementById('inputNumber').value)">
+    </form>
+
+    <script>
+        /** - create a function takes a numeric argument, increases that argument value by 1, 
+         *  and returns the value to the function call. 
+         *  - call the function from within the <body> section of the web page 
+         *  and display the result on the screen.
+         */
+
+        function increaseBy1(input) {
+            input++;
+            document.getElementById('inputNumber').value = input;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 05</title>
+</head>
+<body>
+    <script>
+        /** return the corresponding constellation name of that star user entered before
+         *  if not, display a message dialog to the user
+         */
+
+        let stars = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let constellations = ['Ursa Minor', 'Taurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+
+        let index = -1;
+        let inputStar = prompt('Enter a star: ');
+        for (let i = 0; i < stars.length; i++) {
+            if (stars[i] == inputStar) {
+                index = i;
+                break;
+            }
+        }
+        if (index == -1) {
+            alert('Cant find the star you entered in the array');
+        } else {
+            alert('The constellation: ' + constellations[index]);
+        }
+    </script>
+</body>
+</html>
