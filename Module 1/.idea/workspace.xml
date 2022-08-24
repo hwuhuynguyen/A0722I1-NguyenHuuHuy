@@ -20,16 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a71d6b61-70ab-42bf-9b37-3ea046745843" name="Default Changelist" comment="Submit module 1 assignments (Variable, data type and operator - Practice)">
-      <change afterPath="$PROJECT_DIR$/Function_1/Practice/CallFunction.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Function_1/Practice/MinimumValue.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Function_1/Practice/TemperatureConverter.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Function_2/Exercise/CheckPrimeNumber.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Function_2/Exercise/LengthConverter.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Function_2/Exercise/PracticeFunction01/Exercise01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Function_2/Exercise/PracticeFunction01/Exercise02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Function_2/Exercise/PracticeFunction01/Exercise03.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Function_2/Exercise/PracticeFunction01/Exercise04.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Function_2/Exercise/PracticeFunction01/Exercise05.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Function_2/Exercise/Palindrome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Function_2/Exercise/PracticeFunction02/Exercise01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Function_2/Exercise/PracticeFunction02/Exercise02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Function_2/Exercise/PracticeFunction02/Exercise03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Function_2/Exercise/PracticeFunction02/Exercise04.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Function_2/Exercise/PracticeFunction02/Exercise05.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Function_2/Exercise/PracticeFunction02/Exercise06.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Function_2/Exercise/PracticeFunction02/Exercise07.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Function_2/Exercise/PracticeFunction02/Exercise08.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Function_2/Exercise/PracticeFunction02/Exercise09.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Function_2/Exercise/ProductManagement/ProductManagement.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Function_2/Exercise/ProductManagement/ProductManagement.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Function_2/Exercise/ProductManagement/ProductManagement.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,8 +43,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -114,7 +117,8 @@
       <workItem from="1661141009674" duration="1734000" />
       <workItem from="1661166129565" duration="11587000" />
       <workItem from="1661230323772" duration="4495000" />
-      <workItem from="1661264146122" duration="2945000" />
+      <workItem from="1661264146122" duration="11459000" />
+      <workItem from="1661312651202" duration="10312000" />
     </task>
     <task id="LOCAL-00001" summary="Submit module 1 assignments (Variable, data type and operator - Practice)">
       <created>1660296247945</created>

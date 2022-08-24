@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 02</title>
+</head>
+<body>
+    <script> //find the perimeter and area of a circle
+        const PI = 3.14;
+        let inputRadius = Number(prompt('Enter a radius of a circle: '));
+        let perimeter = findPerimeterOfCircle(inputRadius);
+        let area = findAreaOfCircle(inputRadius);
+
+        console.log('The perimeter of a circle is: ' + perimeter);
+        console.log('The area of a circle is: ' + area);
+
+        function findPerimeterOfCircle(radius) {
+            return 2 * radius * PI;
+        }
+        function findAreaOfCircle(radius) {
+            return Math.pow(radius, 2) * PI;
+        }
+    </script>
+</body>
+</html>

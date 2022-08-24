@@ -1,0 +1,25 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+table {
+    width: 50%;
+    cellpadding: 10px;
+    border-collapse: collapse;
+    font-family: 'Open Sans', sans-serif;
+}
+tr, td {
+    padding: 5px;
+}
+tr:nth-child(odd) {
+    background-color: #dcbe97;
+}
+tr:nth-child(even) {
+    background-color: #eae5e5;
+}
+tr:hover {
+    background-color:#ddd;
+}
+button:hover {
+    cursor: pointer;
+}
+

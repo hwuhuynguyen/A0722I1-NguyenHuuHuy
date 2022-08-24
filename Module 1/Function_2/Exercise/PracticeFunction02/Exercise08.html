@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 08</title>
+</head>
+<body>
+    <script> //reverse an array
+        let n = parseInt(prompt('Enter the length of array: '));
+        let arr = new Array(n);
+        for (let i = 0; i < n; i++) {
+            arr[i] = Number(prompt('Enter a number (' + (i+1) + '/' + n +')'));
+        }
+        function reverseAnArray(arr) {
+            let result = new Array();
+            for (let i = arr.length-1; i >= 0; i--) {
+                result.push(arr[i]);
+            }
+            return result;
+        }
+        console.log('Before reverse: ' + arr.join(' - '));
+        let result = reverseAnArray(arr);
+        console.log('After reverse: ' + result.join(' - '));
+    </script>
+</body>
+</html>

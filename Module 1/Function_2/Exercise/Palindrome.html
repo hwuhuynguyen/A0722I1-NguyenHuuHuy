@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Palindrome</title>
+</head>
+<body>
+    <script> //check if the string is palindrome or not
+        let input = prompt('Enter a string: ');
+        let check = isPalindrome(input);
+        if (check) {
+            alert('The string is a palindrome string');
+        } else {
+            alert('The string is not a palindrome string');
+        }
+        function isPalindrome(str) {
+            if (str.length == 0 ||str.length == 1) return true;
+            if (str[0] == str[str.length-1]) {
+                let result = str.substring(1, str.length-1);
+                return isPalindrome(result);
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>

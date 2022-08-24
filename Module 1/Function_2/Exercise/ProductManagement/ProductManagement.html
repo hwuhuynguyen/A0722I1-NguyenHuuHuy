@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="ProductManagement.css">
+</head>
+<body>
+    <h1>Product Management</h1>
+    <p>
+        <h3>Add new product: </h3> <br/>
+        <form>
+            <input type="text" placeholder="New Product" id="newProduct" name="newProduct">
+            <input type="button" name='add' value="Add product"
+                   onclick="addNewProduct(arrProduct, document.getElementById('newProduct').value)">
+            <br/>
+        </form>
+    </p>
+    <p>
+    <h3>Update product: </h3> <br/>
+    <form>
+        <input type="text" placeholder="Edit Product" id="editProduct" name="editProduct">
+        <input type="button" name='update' value="Update product"
+               onclick="updateProduct(arrProduct, document.getElementById('editProduct').value)">
+        <br/>
+    </form>
+    </p>
+    <p>
+        <h3>Display all products: </h3>
+        <input type="button" id="view" name="view" value="View all products" onclick="viewAllProducts()">
+    </p>
+    <p id="result" on></p>
+    <p id="editForm"></p>
+</body>
+</html>
+<script type="text/javascript" src="ProductManagement.js" ></script>

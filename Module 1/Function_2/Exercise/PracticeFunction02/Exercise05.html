@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 05</title>
+</head>
+<body>
+    <script> //find the minimum value of 3 numbers
+        let arr = new Array(3);
+        for (let i = 0; i < 3; i++) {
+            arr[i] = Number(prompt('Enter a number (' + (i+1) + '/3)'));
+        }
+
+        let result = minArray(arr);
+        alert('Minimum value is: ' + result);
+
+        function minArray(arr) {
+            let min = arr[0];
+
+            for(let i = 1; i < arr.length; i++){
+                if(arr[i] < min){
+                    min = arr[i];
+                }
+            }
+            return min;
+        }
+
+    </script>
+</body>
+</html>

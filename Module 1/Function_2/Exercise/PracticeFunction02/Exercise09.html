@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 09</title>
+</head>
+<body>
+    <script> //calculate the number of occurrences of that character entered
+        let input = prompt('Enter a string: ');
+        let arr = new Array();
+        for (let i = 0; i < input.length; i++) {
+            arr.push(input[i]);
+        }
+        let count = 0;
+        let char = prompt('Enter a character: ');
+        for (let i = 0; i < arr.length; i++) {
+            if (char == arr[i]) {
+                count++;
+            }
+        }
+        if (count == 0) {
+            alert(-1);
+        } else {
+            alert('The number of occurrences of that character is: ' + count);
+        }
+    </script>
+</body>
+</html>

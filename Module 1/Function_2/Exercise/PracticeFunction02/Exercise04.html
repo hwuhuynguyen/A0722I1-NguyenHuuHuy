@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 04</title>
+</head>
+<body>
+    <script> //check if the entered value is a numeric character or not
+        let input = Number(prompt('Enter a number: '));
+
+        checkNumber(input);
+
+        function checkNumber(input) {
+            if (isNaN(input)) {
+                alert(false);
+            } else {
+                alert(true);
+            }
+        }
+    </script>
+</body>
+</html>
