@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adam - Eva</title>
+</head>
+<body>
+    <script>
+        let Apple = function () {
+            this.weight = 10;
+            this.decrease = function () {
+                return this.weight--;
+            }
+            this.isEmpty = function () {
+                if (this.weight == 0) return true;
+                else return false;
+            }
+            this.getWeight = function () {
+                return this.weight;
+            }
+        }
+
+        let Human = function (name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+
+            this.isMale = function () {
+                if (gender == 'M' || gender == 'Male')
+                    return true;
+                else
+                    return false;
+            }
+            this.setGender = function (boolean) {
+                if (true)
+                    this.gender = 'Male';
+                else
+                    this.gender = 'Female';
+            }
+            this.checkApple = function (Apple) {
+                if (Apple.weight > 0) return true;
+                else return false;
+            }
+            this.eat = function (Apple) {
+                Apple.weight--;
+            }
+            this.say = function (string) {
+                console.log(string);
+            }
+            this.getName = function () {
+                return this.name;
+            }
+            this.setName  = function (name) {
+                this.name = name;
+            }
+            this.getWeight = function () {
+                return this.weight;
+            }
+            this.setWeight = function (weight) {
+                this.weight = weight;
+            }
+        }
+
+        let adam = new Human("Adam", "Male", 100);
+        let eva = new Human("Eva", "Female", 50);
+        let apple = new Apple();
+
+        let count = 0;
+        while (!apple.isEmpty()) {
+            adam.eat(apple);
+            console.log(++count);
+            eva.eat(apple);
+            console.log(++count);
+        }
+        if (apple.isEmpty()) {
+            alert('Out of apple!');
+            console.log('Out of apple');
+        }
+    </script>
+</body>
+</html>

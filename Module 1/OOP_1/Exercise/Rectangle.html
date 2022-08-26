@@ -2,9 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Rectangle</title>
 </head>
 <body>
-$END$
+    <canvas id="myCanvas" width="500px" height="300px" style="border: 1px solid black"></canvas>
+    <script>
+        let Rectangle = function (width, height) {
+            this.width = width;
+            this.height = height;
+
+            this.getWidth = function () {
+                return this.width;
+            }
+            this.getHeight =  function () {
+                return this.height;
+            }
+            this.setWidth = function (width) {
+                this.width = width;
+            }
+            this.setHeight = function (height) {
+                this.height = height;
+            }
+            this.getPerimeter = function () {
+                return (this.width + this.height)*2;
+            }
+            this.getArea = function () {
+                return (this.width * this.height);
+            }
+        }
+
+        function drawRectangle(Rectangle) {
+            let c = document.getElementById('myCanvas');
+            let ctx = c.getContext("2d");
+            ctx.moveTo(50, 50);
+            ctx.lineTo(50 + Rectangle.width, 50);
+            ctx.lineTo(50 + Rectangle.getWidth(), 50 + Rectangle.getHeight());
+            ctx.lineTo(50, 50 + Rectangle.getHeight());
+            ctx.lineTo(50, 50);
+            ctx.stroke();
+        }
+
+        let rec = new Rectangle(200, 200);
+        drawRectangle(rec);
+        document.writeln('<br/>')
+
+        document.writeln('Initial perimeter: ' + rec.getPerimeter());
+        document.writeln('<br/>')
+
+        document.writeln('Initial area: ' + rec.getArea());
+        document.writeln('<br/>')
+
+        rec.setWidth(100);
+        rec.setHeight(100);
+        document.writeln('Perimeter later: ' + rec.getPerimeter());
+        document.writeln('<br/>')
+
+        document.writeln('Area later: ' + rec.getArea());
+        document.writeln('<br/>')
+
+    </script>
 </body>
 </html>

@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Temperature</title>
 </head>
 <body>
-$END$
+    <script>
+        let Temperature = function (Celsius) {
+            this.Celsius = Celsius;
+
+            this.convertToKelvin = function () {
+                return Celsius + 273.15;
+            }
+            this.convertToFahrenheit = function () {
+                return (9*Celsius)/5 + 32;
+            }
+        }
+
+        let input = parseInt(prompt('Enter a value of Celsius temperature:'));
+        let temp = new Temperature(input);
+        document.writeln('Fahrenheit: ' + temp.convertToFahrenheit());
+        document.writeln('<br/>')
+        document.writeln('Kelvin: ' + temp.convertToKelvin())
+    </script>
 </body>
 </html>

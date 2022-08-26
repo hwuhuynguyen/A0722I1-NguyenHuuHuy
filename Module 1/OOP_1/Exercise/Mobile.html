@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile</title>
+</head>
+<body>
+    <form>
+        <input type="button" value="View phone's battery status" onclick="">
+    </form>
+    <p id="screen"></p>
+    <script>
+        let Mobile = function (phoneNumber) {
+            this.MessagesReceived = new Array();
+            this.MessagesSend = new Array();
+            this.MessagesDrafted = new Array();
+            
+            this.phoneNumber = phoneNumber;
+            this.batteryStatus = 100;
+            this.phoneStatus = true;
+
+            this.getBatteryStatus = function () {
+                return this.batteryStatus;
+            }
+            this.chargePhone = function () {
+                if (this.batteryStatus == 100) return this.batteryStatus;
+                else return this.batteryStatus++;
+            }
+            this.sendMessage = function (mobile) {
+                let temp = prompt('Type your message here:');
+                let check = confirm('Do you want to send this message?');
+                if (check) {
+                    this.MessagesSend.push(temp);
+                    mobile.MessagesReceived.push(temp);
+                } else {
+                    this.MessagesDrafted.push(temp);
+                }
+                this.batteryStatus--;
+                mobile.batteryStatus--;
+            }
+        }
+
+        let nokia = new Mobile(123);
+        let iphone = new Mobile(124);
+
+        nokia.sendMessage(iphone);
+
+        document.writeln(iphone.MessagesReceived + '');
+
+    </script>
+</body>
+</html>
