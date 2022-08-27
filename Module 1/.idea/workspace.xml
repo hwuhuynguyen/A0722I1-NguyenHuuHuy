@@ -20,18 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a71d6b61-70ab-42bf-9b37-3ea046745843" name="Default Changelist" comment="Submit module 1 assignments (Variable, data type and operator - Practice)">
-      <change afterPath="$PROJECT_DIR$/OOP_1/Exercise/Mobile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OOP_2/Exercise/MovingGame/MovingGame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OOP_2/Practice/FlashLamp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOP_2/Exercise/SwitchButton-FlashLamp.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Function_2/Exercise/ProductManagement/ProductManagement.html" beforeDir="false" afterPath="$PROJECT_DIR$/Function_2/Exercise/ProductManagement/ProductManagement.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_1/Exercise/Rectangle.html" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_1/Exercise/Rectangle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_1/Exercise/Telephone.html" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_2/Exercise/Adam-Eva.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_1/Exercise/Temperature.html" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_1/Exercise/Temperature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_1/Practice/Canvas.html" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_1/Practice/Canvas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_1/Practice/Circle.html" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_1/Practice/Circle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_1/Practice/Date.html" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_1/Practice/Date.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_1/Practice/FunnyCircle.html" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_1/Practice/FunnyCircle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_2/Exercise/MovingGame/MovingGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_2/Exercise/MovingGame/MovingGame.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +115,7 @@
       <workItem from="1661414523834" duration="995000" />
       <workItem from="1661420315757" duration="1713000" />
       <workItem from="1661430464784" duration="1522000" />
-      <workItem from="1661511055087" duration="4686000" />
+      <workItem from="1661511055087" duration="7765000" />
     </task>
     <task id="LOCAL-00001" summary="Submit module 1 assignments (Variable, data type and operator - Practice)">
       <created>1660296247945</created>

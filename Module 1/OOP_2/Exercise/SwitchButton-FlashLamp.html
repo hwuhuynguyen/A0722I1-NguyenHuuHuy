@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch Button and Flash Lamp</title>
+</head>
+<body>
+    <script>
+        let ElectricLamp = function (boolean) {
+            this.status = boolean;
+            this.turnOff = function () {
+                this.status = false;
+            }
+            this.turnOn = function () {
+                this.status = true;
+            }
+        }
+
+        let SwitchButton = function (boolean, ElectricLamp) {
+            this.status = boolean;
+            this.lamp = ElectricLamp;
+            this.equal = true;
+
+            this.connectToLamp = function (ElectricLamp) {
+                if (this.status == ElectricLamp.status) {
+                    this.equal = true;
+                } else {
+                    this.equal = false;
+                }
+            }
+            this.switchOff = function () {
+                this.lamp.status = false;
+                if (this.equal) {
+                    this.status = false;
+                } else {
+                    this.status = true;
+                }
+            }
+            this.switchOn = function () {
+                this.lamp.status = true;
+                if (this.equal) {
+                    this.status = true;
+                } else {
+                    this.status = false;
+                }
+            }
+        }
+
+        let lamp = new ElectricLamp(true);
+        let button = new SwitchButton(true, lamp);
+
+        button.connectToLamp(lamp);
+        alert('The switch button status: ' + button.status + "\n" + 'The lamp status: ' + lamp.status);
+
+        button.switchOff();
+        alert('The switch button status: ' + button.status + "\n" + 'The lamp status: ' + lamp.status);
+
+        button.switchOn();
+        alert('The switch button status: ' + button.status + "\n" + 'The lamp status: ' + lamp.status);
+    </script>
+</body>
+</html>

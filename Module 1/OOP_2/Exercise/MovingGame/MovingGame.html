@@ -40,17 +40,32 @@
 
         let hero = new Hero('doraemon.png', 20, 30, 200);
 
+        let checkWidth = true;
+        let checkHeight = true;
         function start(){
-            if(hero.left < window.innerWidth - hero.size){
-                hero.moveRight();
+            if (checkWidth) {
+                if(hero.left < window.innerWidth - hero.size){
+                    hero.moveRight();
+                }
+                if (hero.left >= window.innerWidth - hero.size) checkWidth = false;
             } else {
-
+                if(hero.left > 0){
+                    hero.moveLeft();
+                }
+                if (hero.left <= 0) checkWidth = true;
             }
 
-            if(hero.top < window.innerHeight - hero.size){
-                hero.moveDown();
-            } else {
-
+            if (checkHeight) {
+                if(hero.top < window.innerHeight - hero.size){
+                    hero.moveDown();
+                }
+                if(hero.top >= window.innerHeight - hero.size) checkHeight = false
+            }
+             else {
+                if(hero.top > 0){
+                    hero.moveUp();
+                }
+                if (hero.top <= 0) checkHeight = true;
             }
             document.getElementById('game').innerHTML = hero.getHeroElement();
             setTimeout(start, 500);
