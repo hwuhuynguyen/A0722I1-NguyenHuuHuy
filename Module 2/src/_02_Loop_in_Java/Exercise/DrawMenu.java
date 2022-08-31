@@ -69,11 +69,19 @@ public class DrawMenu {
                     System.out.println();
                     break;
                 case 3:
-                    for (int i = 7; i >= 1; i--) {
-                        for (int j = 1; j <= i; j++)
-                            System.out.print("*");
+                    int q = 0;
+                    int n = 7;
+                    while (n > 0)
+                    {
+                        for (int i = 1; i < n; i++)
+                            System.out.printf(" ");
+                        for (int k = 0; k <= q; k ++)
+                            System.out.printf("*");
+                        n-- ;
+                        q += 2 ;
                         System.out.println();
                     }
+
                     break;
                 case 0:
                     System.exit(0);
