@@ -20,13 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a71d6b61-70ab-42bf-9b37-3ea046745843" name="Default Changelist" comment="Submit module 1 assignments (Variable, data type and operator - Practice)">
-      <change afterPath="$PROJECT_DIR$/../Module 2/src/_02_Loop_in_Java/Exercise/Display20FirstPrimeNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module 2/src/_02_Loop_in_Java/Exercise/DrawMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module 2/src/_02_Loop_in_Java/Practice/GreatCommonFactor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module 2/src/_02_Loop_in_Java/Practice/InterestCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module 2/src/_02_Loop_in_Java/Practice/PrimeNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module 2/src/_02_Loop_in_Java/Practice/SimpleMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module 2/out/production/Module 2/_15_Exception_Debug/Practice/ArrayExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Module 2/out/production/Module 2/_15_Exception_Debug/Practice/ArrayExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module 2/src/_15_Exception_Debug/Practice/ArrayExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module 2/src/_15_Exception_Debug/Practice/ArrayExample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +123,7 @@
       <workItem from="1661864711481" duration="1756000" />
       <workItem from="1661920626535" duration="565000" />
       <workItem from="1661943435198" duration="650000" />
+      <workItem from="1662552984992" duration="53000" />
     </task>
     <task id="LOCAL-00001" summary="Submit module 1 assignments (Variable, data type and operator - Practice)">
       <created>1660296247945</created>

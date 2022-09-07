@@ -25,7 +25,7 @@ public class ArrayExample {
         try {
             System.out.println("The value of element with index " + x + " is: " + arr[x]);
         } catch (IndexOutOfBoundsException e) {
-            System.err.println("Error: Index out of bounds!");
+            System.err.println("Error: " + e.getMessage());
         }
     }
 
