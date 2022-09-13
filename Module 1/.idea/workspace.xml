@@ -20,8 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a71d6b61-70ab-42bf-9b37-3ea046745843" name="Default Changelist" comment="Submit module 1 assignments (Variable, data type and operator - Practice)">
-      <change beforePath="$PROJECT_DIR$/../Module 2/out/production/Module 2/_15_Exception_Debug/Practice/ArrayExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Module 2/out/production/Module 2/_15_Exception_Debug/Practice/ArrayExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module 2/src/_15_Exception_Debug/Practice/ArrayExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module 2/src/_15_Exception_Debug/Practice/ArrayExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +51,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ConditionalStructure_2/Practice/MouseEvent" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -124,6 +123,9 @@
       <workItem from="1661920626535" duration="565000" />
       <workItem from="1661943435198" duration="650000" />
       <workItem from="1662552984992" duration="53000" />
+      <workItem from="1662966432249" duration="610000" />
+      <workItem from="1662985444912" duration="32000" />
+      <workItem from="1663001046765" duration="49000" />
     </task>
     <task id="LOCAL-00001" summary="Submit module 1 assignments (Variable, data type and operator - Practice)">
       <created>1660296247945</created>
@@ -163,10 +165,10 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="499" y="155" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.816@0.0.1536.816" timestamp="1660397881172" />
-    <state x="549" y="150" key="FileChooserDialogImpl" timestamp="1660483668976">
+    <state x="549" y="150" key="FileChooserDialogImpl" timestamp="1662966444943">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="549" y="150" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1660483668976" />
+    <state x="549" y="150" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1662966444943" />
     <state x="441" y="29" key="SettingsEditor" timestamp="1660622826183">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
