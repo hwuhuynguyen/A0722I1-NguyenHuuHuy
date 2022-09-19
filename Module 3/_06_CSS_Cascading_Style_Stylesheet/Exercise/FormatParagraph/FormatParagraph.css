@@ -1,0 +1,21 @@
+h1 {
+    margin-bottom: 0px;
+    font-weight: lighter;
+    margin-left: 20px;
+}
+hr {
+    margin-left: 20px;
+    width: 50%;
+}
+.content {
+    text-indent: 50px;
+    margin-left: 20px;
+    width: 50%;
+    text-align: justify;
+}
+#title {
+    margin-top: -5px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}

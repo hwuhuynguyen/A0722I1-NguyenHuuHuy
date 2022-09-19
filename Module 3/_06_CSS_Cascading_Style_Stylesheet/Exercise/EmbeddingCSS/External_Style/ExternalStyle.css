@@ -1,0 +1,11 @@
+h1 {
+    color: green;
+    margin-left: 15px;
+}
+p {
+    color: blue;
+    border: 1px solid black;
+    margin-left: 15px;
+    font-size: 120%;
+    width: 500px;
+}
