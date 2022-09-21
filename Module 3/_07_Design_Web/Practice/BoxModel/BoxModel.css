@@ -1,0 +1,7 @@
+div {
+    border: 5px;
+    border-color: greenyellow deepskyblue blue rebeccapurple;
+    width: 100%;
+    height: 100px;
+    background-color: #4CAF50;
+}
