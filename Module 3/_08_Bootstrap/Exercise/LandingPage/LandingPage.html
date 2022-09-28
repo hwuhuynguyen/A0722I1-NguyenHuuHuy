@@ -1,51 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!--    Required meta tag -->
+    <!-- Required meta tag -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Landing page</title>
 
-<!--    Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS and CSS Icons library -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="LandingPage.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+    <nav class="navbar navbar-expand bg-light fixed-top">
+        <div class="container-fluid justify-content-around">
+            <i class="navbar-brand bi bi-microsoft"
+                  style="font-family: 'Arial'; font-style: normal; padding-left: 20px;"> Microsoft</i>
+            <div class="nav navbar-brand">| Surface</div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav small">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Computers
+                        </a>
+                        <ul class="dropdown-menu bg-light border-0 m-0 pb-0">
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">2-in-1 PCs</a>
+                            </li>
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">Laptop</a>
+                            </li>
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">Dual Screen</a>
+                            </li>
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">All-in-One</a>
+                            </li>
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">Need help deciding?</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Computers for Business
+                        </a>
+                        <ul class="dropdown-menu bg-light border-0 m-0 pb-0">
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">2-in-1 Tablets</a>
+                            </li>
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">Laptop</a>
+                            </li>
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">Small and Large Screens</a>
+                            </li>
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">All-in-One</a>
+                            </li>
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">Need help deciding?</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Accessories
+                        </a>
+                        <ul class="dropdown-menu bg-light border-0 m-0 pb-0">
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">Surface Headphones 2</a>
+                            </li>
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">Surface Earbuds</a>
+                            </li>
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">Surface Pro X accessories</a>
+                            </li>
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">Surface Pro accessories</a>
+                            </li>
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">Surface Laptop accessories</a>
+                            </li>
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">Surface Book accessories</a>
+                            </li>
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">Surface Go accessories</a>
+                            </li>
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">Surface Studio accessories</a>
+                            </li>
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">All Surface accessories</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop now
+                        </a>
+                        <ul class="dropdown-menu bg-light border-0 m-0 pb-0">
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">Surface deals</a>
+                            </li>
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">Surface bundles</a>
+                            </li>
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">All Surface devices</a>
+                            </li>
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">Where to buy</a>
+                            </li>
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">Personal shopping appointments</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Support</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse navbar-expand-sm justify-content-end" style="padding-right: 10px;">
+                <ul class="navbar-nav small">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            All Microsoft
+                        </a>
+                        <ul class="dropdown-menu bg-light border-0 m-0 pb-0">
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">Microsoft 365</a>
+                            </li>
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">Teams</a>
+                            </li>
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">Windows</a>
+                            </li>
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">Surface</a>
+                            </li>
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">X-Box</a>
+                            </li>
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">Deals</a>
+                            </li>
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">Small Business</a>
+                            </li>
+                            <li class="dropdown-item small">
+                                <a class="nav-link" href="#">Support</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Search
+                            <span><i class="bi bi-search"></i></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cart
+                            <span><i class="bi bi-cart"></i></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign-in
+                            <span class="bi bi-person-circle"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid" style="margin-top: 55px; padding: 0">
+        <section class="container-fluid" style="padding: 0">
+            <video class="container-fluid" autoplay muted type="video/mp4" style="padding: 0">
+                <source src="video/animation-video.mp4">
+            </video>
+            <div class="col-5 overlay">
+                <h1 style="font-size: 88px">Laptops designed by Microsoft</h1>
+                <h3 style="padding: 20px 0px;">
+                    Surface laptops and 2-in-1s with Windows 11 empower you to create at home, in the classroom,
+                    and on the go.
+                </h3>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                <div style="font-size: 20px; padding: 20px 10px">
+                    <a href="#" style="padding: 0px 15px; text-decoration: none">
+                        Shop details<i class="bi bi-chevron-right"></i></a>
+                    <a href="#" style="padding: 0px 15px; text-decoration: none">
+                        Explore all products<i class="bi bi-chevron-right"></i></a>
                 </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+            </div>
+        </section>
+        <section class="container-fluid" style="padding: 50px">
+            <h1 style="padding: 10px">For all the ways you create</h1>
+            <section>
+                <ul class="navbar-nav small">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Search
+                            <span><i class="bi bi-search"></i></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cart
+                            <span><i class="bi bi-cart"></i></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign-in
+                            <span class="bi bi-person-circle"></span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </section>
     </div>
-</nav>
 </body>
 </html>
