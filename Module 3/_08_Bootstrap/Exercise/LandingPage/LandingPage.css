@@ -1,0 +1,13 @@
+.overlay {
+    position: absolute;
+    top: 200px;
+    left: 58.3333%;
+}
+.sub-menu {
+    display: inline-block;
+    flex-direction: row;
+    color: #5858ab;
+    font-size: 16px;
+    font-weight: bold;
+    width: 110px;
+}
