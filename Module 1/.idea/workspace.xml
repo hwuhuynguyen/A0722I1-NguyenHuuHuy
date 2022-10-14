@@ -21,6 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a71d6b61-70ab-42bf-9b37-3ea046745843" name="Default Changelist" comment="Submit module 1 assignments (Variable, data type and operator - Practice)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module 3/.idea/Module 3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Module 3/.idea/Module 3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module 3/_08_Bootstrap/Exercise/LandingPage/LandingPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Module 3/_08_Bootstrap/Exercise/LandingPage/LandingPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module 3/_08_Bootstrap/Exercise/LandingPage/LandingPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Module 3/_08_Bootstrap/Exercise/LandingPage/LandingPage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,9 +33,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -126,6 +129,10 @@
       <workItem from="1662966432249" duration="610000" />
       <workItem from="1662985444912" duration="32000" />
       <workItem from="1663001046765" duration="49000" />
+      <workItem from="1664797466658" duration="8477000" />
+      <workItem from="1664853098386" duration="130000" />
+      <workItem from="1664853400390" duration="590000" />
+      <workItem from="1664972699237" duration="73000" />
     </task>
     <task id="LOCAL-00001" summary="Submit module 1 assignments (Variable, data type and operator - Practice)">
       <created>1660296247945</created>

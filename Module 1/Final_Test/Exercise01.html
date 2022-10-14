@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 01</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css"/>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
+</head>
+<body style="font-size: larger; position: absolute; top: 50% ;left: 50% ; transform: translate(-50%, -50%)">
+    <p>
+        <label>Input array: </label> <br/>
+        <label id="inputArr"></label> <br/>
+        <label>Prime numbers of input array: </label>
+        <br/>
+        <label id="result"></label>
+    </p>
+    <script>
+        let inputLength;
+        do {
+            inputLength = parseInt(prompt("Enter the length of the array: "));
+        } while (inputLength > 50);
+
+        let inputArray = new Array(inputLength);
+        for (let i = 0; i < inputLength; i++) {
+            inputArray[i] = parseInt(prompt('Enter value of Array[' + i + ']: '));
+        }
+        document.getElementById('inputArr').innerText = inputArray.join(' - ');
+
+        let resultArray = new Array();
+        for (let i = 0; i < inputLength; i++) {
+            if (isPrimeNumber(inputArray[i])) {
+                resultArray.push(inputArray[i]);
+            }
+        }
+        if (resultArray.length != 0)
+            document.getElementById('result').innerText = resultArray.join(' - ');
+        else
+            document.getElementById('result').innerText = 'Null';
+
+        function isPrimeNumber(input) {
+            let i;
+            if (input < 2) return false;
+            let divisorCount = 0;
+            for (i = 1; i <= input; i++) {
+                if (input % i == 0) divisorCount++;
+            }
+            if (divisorCount > 2)
+                return false;
+            return true;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 02</title>
+</head>
+<body style="font-size: larger; position: absolute; top: 50% ;left: 50% ; transform: translate(-50%, -50%)">
+
+<script>
+        let PhanSo1 = inputPhanSo(1);
+        let PhanSo2 = inputPhanSo(2);
+
+        let gcd1 = parseInt(findGCD(PhanSo1));
+        let gcd2 = parseInt(findGCD(PhanSo2));
+        if (gcd1 == 0 || gcd2 == 0) {
+            alert('false');
+        } else {
+            PhanSo1[0] /= gcd1;
+            PhanSo1[1] /= gcd1;
+
+            PhanSo2[0] /= gcd2;
+            PhanSo2[1] /= gcd2;
+
+            if (isEqual(PhanSo1, PhanSo2))
+                alert('true');
+            else
+                alert('false');
+        }
+
+        function inputPhanSo(i) {
+            let inputTuSo = parseInt(prompt("Nhap tu so cua phan so thu " + i + ": "));
+            let inputMauSo = parseInt(prompt("Nhap mau so cua phan so thu " + i + ": "));
+            let PhanSo = new Array();
+            PhanSo.push(inputTuSo);
+            PhanSo.push(inputMauSo);
+            return PhanSo;
+        }
+
+        function findGCD(array) {
+            let inputTu = array[0];
+            let inputMau = array[1];
+            if (inputTu == 0 || inputMau == 0)
+                return 0;
+            while (inputTu != inputMau) {
+                if (inputTu > inputMau) {
+                    inputTu -= inputMau;
+                } else {
+                    inputMau -= inputTu;
+                }
+            }
+            return inputMau;
+        }
+
+        function isEqual(input1, input2) {
+            if ((input1[0] == input2[0]) && (input1[1] == input2[1]))
+                return true;
+            else if ((input1[0] == input2[0]) && (input1 == 0))
+                return true;
+            return false;
+        }
+    </script>
+</body>
+</html>
