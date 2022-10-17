@@ -1,6 +1,6 @@
 package _02_Loop_in_Java.Exercise;
 
-public class Display20FirstPrimeNumbers {
+public class DisplayTwentyFirstPrimeNumbers {
     public static void main(String[] args) {
         int count = 0;
         int number = 2;

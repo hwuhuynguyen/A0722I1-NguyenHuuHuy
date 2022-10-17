@@ -1,6 +1,6 @@
 package _02_Loop_in_Java.Exercise;
 
-public class DisplayPrimeNumbersLessThan100 {
+public class DisplayPrimeNumbersLessThanOneHundred {
     public static void main(String[] args) {
         for (int i = 2; i <= 100; i++) {
             if (isPrime(i)) {

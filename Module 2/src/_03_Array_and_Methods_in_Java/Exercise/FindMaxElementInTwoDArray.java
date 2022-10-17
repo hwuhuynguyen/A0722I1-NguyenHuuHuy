@@ -1,8 +1,8 @@
-package _03_Array_and_Method_in_Java.Exercise;
+package _03_Array_and_Methods_in_Java.Exercise;
 
 import java.util.Scanner;
 
-public class FindMaxElementIn2DArray {
+public class FindMaxElementInTwoDArray {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.printf("Enter number of rows: ");
@@ -17,16 +17,16 @@ public class FindMaxElementIn2DArray {
                 array[i][j] = scanner.nextInt();
             }
         }
-        int min = array[0][0];
+        int max = array[0][0];
 
         System.out.println("Matrix: ");
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < column; j++) {
                 System.out.print(array[i][j] + " ");
-                if (min > array[i][j]) min = array[i][j];
+                if (max < array[i][j]) max = array[i][j];
             }
             System.out.println();
         }
-        System.out.println("Min value of this matrix is: " + min);
+        System.out.println("Min value of this matrix is: " + max);
     }
 }
