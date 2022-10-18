@@ -1,0 +1,16 @@
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 100%;
+}
+td {
+    text-align: center;
+}
+tr, td, th {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+img {
+    width: 100px;
+    height: auto;
+}
