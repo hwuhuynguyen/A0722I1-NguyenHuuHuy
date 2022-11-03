@@ -1,0 +1,4 @@
+Service Name,Usable Area,Rental Cost,Max Capacity,Rental Type,Room Standard,Floors
+SVHO-0001,200.0,300000.0,9,Monthly,Superior,2
+SVHO-0002,150.0,230000.0,6,Weekly,Standard,2
+SVHO-0003,300.0,500000.0,11,Weekly,Standard,4

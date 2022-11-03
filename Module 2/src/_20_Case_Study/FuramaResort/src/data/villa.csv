@@ -1,0 +1,6 @@
+Service Name,Usable Area,Rental Cost,Max Capacity,Rental Type,Room Standard,Pool Area,Floors
+SVVL-0001,300.0,4000000.0,13,Annual,Superior,50.0,5
+SVVL-0002,600.0,9900000.0,15,Monthly,Standard,100.0,3
+SVVL-0003,500.0,7900000.0,14,Annual,Superior,50.0,2
+SVVL-0004,250.0,2000000.0,13,Weekly,Standard,60.0,1
+SVVL-0005,40.0,300000.0,12,Weekly,Standard,2000.0,2

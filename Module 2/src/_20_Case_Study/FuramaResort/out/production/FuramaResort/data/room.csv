@@ -1,0 +1,4 @@
+Service Name,Usable Area,Rental Cost,Max Capacity,Rental Type,Free Service Included
+SVRO-0001,150.0,10000.0,4,Weekly,Hot water
+SVRO-0002,120.0,7000.0,3,Annual,Hot water-Wifi
+SVRO-0003,250.0,20000.0,5,Monthly,Warm water-Wifi
