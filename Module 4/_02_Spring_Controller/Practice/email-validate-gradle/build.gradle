@@ -1,0 +1,22 @@
+plugins {
+    id 'war'
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.springframework/spring-webmvc
+    implementation group: 'org.springframework', name: 'spring-webmvc', version: '5.3.23'
+    compileOnly group: 'javax.servlet', name: 'servlet-api', version: '2.5'
+}
+
+test {
+    useJUnitPlatform()
+}
