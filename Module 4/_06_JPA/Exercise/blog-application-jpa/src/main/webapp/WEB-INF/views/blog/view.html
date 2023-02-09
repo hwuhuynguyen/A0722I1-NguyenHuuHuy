@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View</title>
+</head>
+<body>
+<p>
+    <a href="/blog">blog list</a>
+</p>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Content</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td th:text="${blog.content}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
