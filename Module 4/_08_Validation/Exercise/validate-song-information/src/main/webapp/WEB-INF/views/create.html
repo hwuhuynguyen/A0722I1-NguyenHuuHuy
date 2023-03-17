@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3><a class="btn btn-primary" th:href="@{/home}" role="button">List Music!!!</a></h3>
+<th:block th:if="${message}">
+    <p th:text="${message}"></p>
+</th:block>
+<form th:action="@{/create-music}" method="post" th:object="${music}">
+    <input type="hidden" th:field="*{id}">
+    <table>
+        <tr>
+            <td>Name Song:</td>
+            <td><input type="text" th:field="*{nameSong}">
+                <p class="text-danger" th:if="${#fields.hasErrors('nameSong')}" th:errors="*{nameSong}">Name Song Error</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Name Singer:</td>
+            <td><input type="text" th:field="*{singer}">
+                <p class="text-danger" th:if="${#fields.hasErrors('singer')}" th:errors="*{singer}">Name Singer Error</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Category:</td>
+            <td><input type="text" th:field="*{category}">
+                <p class="text-danger" th:if="${#fields.hasErrors('category')}" th:errors="*{category}">Name Category Error</p>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit" class="btn btn-primary">Create</button>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input class="btn btn-primary" type="reset" value="Reset">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3><a class="btn btn-primary" th:href="@{/create-music}" role="button">Create New Music!!!</a></h3>
+<h1>List Music</h1>
+<table class="table table-dark table-striped">
+    <tr>
+        <th>No.</th>
+        <th>Id</th>
+        <th>Name Song</th>
+        <th>Singer</th>
+        <th>Category</th>
+        <th>Edit</th>
+    </tr>
+    <tr th:each="music,iterStart :${musics}">
+        <td th:text="${iterStart.count}"></td>
+        <td th:text="${music.getId()}"></td>
+        <td th:text="${music.getNameSong()}"></td>
+        <td th:text="${music.getSinger()}"></td>
+        <td th:text="${music.getCategory()}"></td>
+        <td><a th:href="@{/edit-music/__${music.id}__ }">Edit</a></td>
+    </tr>
+</table>
+</body>
+</html>
