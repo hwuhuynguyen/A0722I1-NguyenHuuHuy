@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        function searchBlog() {
+            let searchInput = $('#search-input').val();
+            console.log(searchInput);
+            $.ajax({
+                type: "GET",
+                data: JSON.stringify(searchInput),
+                //tên API
+                url: "/blog?search=" + searchInput,
+                //xử lý khi thành công
+                success: successHandler(searchInput),
+            });
+            //chặn sự kiện mặc định của thẻ
+            event.preventDefault();
+        }
+        function successHandler(search) {
+            $.ajax({
+                type: "GET",
+                //tên API
+                url: "/blog?search=" + search,
+                //xử lý khi thành công
+                success: function (data) {
+                    // hien thi danh sach o day
+                    console.log(data);
+                    console.log("success");
+                }
+            });
+        }
+        // function getBlog(blog) {
+        //     return `<tr><td>${blog.producer}</td><td >${blog.model}</td><td >${blog.price}</td>\` +
+        //         \`<td><a class="deleteSmartphone" href="${blog.id}">Delete</a></td>\` +
+        //         \`<td><a class="updateSmartphone" href="${blog.id}">Update</a></td></tr>`
+        // }
+    </script>
+</head>
+<body>
+<a href="/create-blog">Create new blog</a>
+<h1>Blog</h1>
+<form>
+    Search by blog's name:
+    <input id="search-input" name="search" type="text"/>
+    <input class="searchBlog" type="submit" value="Search" onclick="searchBlog()"/>
+</form>
+<br/>
+<a th:href="@{/blog}">Tat ca the loai</a>
+<th:block th:each="category : ${categories}">
+    <a th:href="@{/blog?filter=__${category.nameCategory}__}" th:text="${category.nameCategory}"></a>
+</th:block>
+<table border="1">
+    <tr>
+        <th>Blog's Name</th>
+        <th>Writer</th>
+        <th>Day write</th>
+        <th>Category</th>
+        <th>View</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    <th:block th:each="blog : ${blogs}">
+        <tr>
+            <td th:text="${blog.name}"></td>
+            <td th:text="${blog.writer}"></td>
+            <td th:text="${blog.date}"></td>
+            <td th:text="${blog?.category?.nameCategory}"></td>
+            <td><a th:href="@{/view-blog/__${blog.id}__ }">View</a></td>
+            <td><a th:href="@{/edit-blog/__${blog.id}__ }">Edit</a></td>
+            <td><a th:href="@{/delete-blog/__${blog.id}__ }">Delete</a></td>
+        </tr>
+    </th:block>
+</table>
+
+<!--<div>-->
+<!--    <a th:href="@{'/blog'(page=${blogs.number - 1})}" th:if="${blogs.hasPrevious()}">Previous</a>-->
+<!--    <span th:text="${blogs.number + 1}"></span>/<span th:text="${blogs.totalPages}"></span>-->
+<!--    <a th:href="@{'/blog'(page=${blogs.number + 1})}" th:if="${blogs.hasNext()}">Next</a>-->
+<!--</div>-->
+</body>
+</html>
