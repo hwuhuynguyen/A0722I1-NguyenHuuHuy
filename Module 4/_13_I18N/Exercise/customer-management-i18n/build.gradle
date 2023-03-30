@@ -1,0 +1,33 @@
+plugins {
+    id 'war'
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'javax.servlet', name: 'javax.servlet-api', version: '3.1.0'
+    implementation group: 'org.springframework', name: 'spring-webmvc', version: '5.0.10.RELEASE'
+    implementation group: 'org.springframework', name: 'spring-orm', version: '5.3.24'
+
+    implementation group: 'org.thymeleaf', name: 'thymeleaf-spring5', version: '3.1.0.RELEASE'
+    implementation group: 'nz.net.ultraq.thymeleaf', name: 'thymeleaf-layout-dialect', version: '2.5.3'
+
+    implementation group: 'org.hibernate', name: 'hibernate-core', version: '5.4.3.Final'
+    implementation group: 'org.hibernate', name: 'hibernate-entitymanager', version: '5.6.12.Final'
+
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.31'
+    implementation group: 'org.springframework.data', name: 'spring-data-jpa', version: '2.7.6'
+
+    implementation group: 'org.springframework', name: 'spring-aspects', version: '5.3.24'
+}
+
+test {
+    useJUnitPlatform()
+}
