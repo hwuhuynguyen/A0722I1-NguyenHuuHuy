@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <div>
+        <h2>Xem thông tin chi tiết dự án</h2>
+    </div>
+    <div>
+        <table th:object="${project}">
+            <tr>
+                <th>Mã dự án</th>
+                <td>
+                    <p th:text="*{id}"></p>
+                </td>
+            </tr>
+            <tr>
+                <th>Tên dự án</th>
+                <td>
+                    <p th:text="*{name}"></p>
+                </td>
+            </tr>
+            <tr>
+                <th>Tên doanh nghiệp</th>
+                <td>
+                    <p th:text="*{company.name}"></p>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Lĩnh vực kinh doanh</th>
+                <td>
+                    <p th:text="*{company.field}"></p>
+                </td>
+            </tr>
+            <tr>
+                <th>Số điện thoại</th>
+                <td>
+                    <p th:text="*{company.phoneNumber}"></p>
+                </td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>
+                    <p th:text="*{company.email}"></p>
+                </td>
+            </tr>
+            <tr>
+                <th>Kinh phí yêu cầu</th>
+                <td>
+                    <p th:text="*{budget}"></p>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Thời gian đăng ký giới thiệu</th>
+                <td>
+                    <p th:text="*{month}"></p>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Ngày đăng ký</th>
+                <td>
+                    <p th:text="*{registerDate}"></p>
+                </td>
+            </tr>
+            <tr>
+                <th>Chi phí</th>
+                <td>
+                    <p th:text="*{cost}"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a th:href="@{/project/list}">Quay lại</a></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="header">
+    <h2>Thêm mới dự án</h2>
+</div>
+<div class="body">
+    <form id="form-register" th:action="@{/project/register}" method="post" th:object="${project}"
+          enctype="multipart/form-data">
+        <table>
+            <tr>
+                <th>Mã dự án</th>
+                <td>
+                    <input th:field="*{id}" disabled/>
+                </td>
+            </tr>
+            <tr>
+                <th>Tên doanh nghiệp</th>
+                <td>
+                    <select th:field="*{company}" tabindex="1">
+                        <option th:each="company : ${companyList}"
+                                th:value="${company.id}"
+                                th:text="${company.name}"
+                        ></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Tên dự án</th>
+                <td>
+                    <input th:field="*{name}" tabindex="2" id="name">
+                </td>
+                <td>
+                    <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>Kinh phí yêu cầu</th>
+                <td>
+                    <input type="number" th:field="*{budget}" tabindex="3" id="budget"/>
+                </td>
+                <td>
+                    <span th:if="${#fields.hasErrors('budget')}" th:errors="*{budget}"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>Mô tả dự án</th>
+                <td>
+                    <textarea th:field="*{description}" id="description"
+                           placeholder="Description" tabindex="4"></textarea>
+                </td>
+                <td>
+                    <span th:if="${#fields.hasErrors('description')}" th:errors="*{description}"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>Thời gian đăng ký giới thiệu</th>
+                <td>
+                    <input type="number" id="month" th:field="*{month}"
+                           placeholder="Month" tabindex="5"/>
+                </td>
+                <td>
+                    <span th:if="${#fields.hasErrors('month')}" th:errors="*{month}"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>Ngày đăng ký</th>
+                <td>
+                    <input type="date" id="registerDate" th:field="*{registerDate}" class="form-control"
+                           placeholder="Register date" readonly/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" tabindex="6">Đăng ký</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a th:href="@{/project/list}" tabindex="7">Quay lại</a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

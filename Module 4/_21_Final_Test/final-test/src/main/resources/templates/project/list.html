@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <div>
+        <h2>
+            Thống kê dự án
+        </h2>
+    </div>
+    <div>
+        <a th:href="@{/project/list}">Danh sách tổng hợp</a>
+        <br/>
+        <a th:href="@{/project/register}">Thêm mới dự án</a>
+    </div>
+    <div>
+        <p>Tìm kiếm theo: </p>
+        <form>
+            Từ ngày:
+            <input name="startedDate" type="date"/>
+            <br/>
+            Đến ngày:
+            <input name="endDate" type="date"/>
+            <br/>
+            Tên dự án:
+            <input name="name" type="text"/>
+            <input type="submit" value="Tìm kiếm"/>
+        </form>
+    </div>
+    <!--    <div>-->
+    <!--        <a th:href="@{/card/borrow-list}">Danh sách đang mượn</a>-->
+    <!--    </div>-->
+    <div>
+        <table id="dataTable-listStudent">
+            <thead>
+            <tr>
+                <th>Mã dự án</th>
+                <th>Tên dự án</th>
+                <th>Tên doanh nghiệp</th>
+                <th>Kinh phí yêu cầu</th>
+                <th>Thời gian đăng ký giới thiệu (tháng)</th>
+                <th>Ngày đăng ký</th>
+                <th>Chi phí</th>
+                <th>Hành động</th>
+            </tr>
+            </thead>
+            <tbody id="result">
+            <tr th:each="project, iterStat: ${projectList}" th:object="${project}">
+                <td th:text="*{id}"></td>
+                <td th:text="*{name}"></td>
+                <td th:text="*{company.name}"></td>
+                <td th:text="*{budget}"></td>
+                <td th:text="*{month}"></td>
+                <td th:text="*{#dates.format(registerDate, 'dd/MM/yyyy')}"></td>
+                <td th:text="*{cost}"></td>
+                <td>
+                    <a th:href="@{/project/detail/{id}(id=*{id})}">Chi tiết</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
