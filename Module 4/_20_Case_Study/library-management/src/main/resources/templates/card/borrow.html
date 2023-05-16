@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="header">
+    <h2>Thêm mới phòng trọ</h2>
+</div>
+<div class="body">
+    <form id="form-register" th:action="@{/card/borrow}" method="post" th:object="${card}"
+          enctype="multipart/form-data">
+        <table>
+            <tr>
+                <th>Mã mượn sách</th>
+                <td>
+                    <input th:field="*{id}" readonly/>
+                </td>
+            </tr>
+            <tr>
+                <th>Mã sách</th>
+                <td>
+                    <input id="book" th:field="*{book}" readonly/>
+                </td>
+            </tr>
+            <tr>
+                <th>Tên sách</th>
+                <td>
+                    <input th:value="${book.name}" readonly>
+                </td>
+            </tr>
+            <tr>
+                <th>Tên học sinh</th>
+                <td>
+                    <select th:field="*{student}" tabindex="1" id="student">
+                        <option th:each="student : ${studentList}"
+                                th:value="${student.id}"
+                                th:text="${student.name}"
+                        ></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Ngày mượn sách</th>
+                <td>
+                    <input type="date" id="startedDate" th:field="*{startedDate}" class="form-control"
+                           placeholder="Started date" tabindex="4"/>
+                </td>
+                <td>
+                    <span th:if="${#fields.hasErrors('startedDate')}" th:errors="*{startedDate}"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>Ngày trả sách</th>
+                <td>
+                    <input type="date" id="endDate" th:field="*{endDate}" class="form-control"
+                           placeholder="End date" tabindex="5"/>
+                </td>
+                <td>
+                    <span th:if="${#fields.hasErrors('endDate')}" th:errors="*{endDate}"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" class="btn btn-primary btn-custom" tabindex="12">Mượn sách
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a th:href="@{/book/list}" class="btn btn-primary btn-custom" tabindex="13">Quay lại</a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div class="card">
+  <div class="header">
+    <h2>Xem thông tin chi tiết phòng trọ</h2>
+  </div>
+  <div class="body">
+      <table th:object="${motel}">
+        <tr>
+          <th>Mã phòng trọ</th>
+          <td>
+            <input th:field="*{id}" disabled/>
+          </td>
+        </tr>
+        <tr>
+          <th>Tên người thuê</th>
+          <td>
+            <input th:field="*{customerName}" disabled/>
+          </td>
+        </tr>
+        <tr>
+          <th>Phương thức thanh toán</th>
+          <td>
+            <input th:field="*{payment.paymentMethod}" disabled/>
+          </td>
+        </tr>
+
+        <tr>
+          <th>Số điện thoại</th>
+          <td>
+            <input th:field="*{phoneNumber}" disabled/>
+          </td>
+        </tr>
+        <tr>
+          <th>Ngày thuê trọ</th>
+          <td>
+            <input th:field="*{startedDate}" disabled />
+          </td>
+        </tr>
+        <tr>
+          <th>Ghi chú</th>
+          <td>
+            <input th:field="*{note}" disabled/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a th:href="@{/motel/list}"> Quay lại</a></td>
+        </tr>
+      </table>
+  </div>
+</div>
+</body>
+</html>

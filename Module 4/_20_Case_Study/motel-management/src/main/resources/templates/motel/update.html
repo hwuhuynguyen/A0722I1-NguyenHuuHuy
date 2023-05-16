@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="card">
+    <div class="header">
+        <h2>Cập nhật thông tin phòng trọ</h2>
+    </div>
+    <div class="body">
+        <form id="form-register" th:action="@{/motel/update}" method="post" th:object="${motel}"
+              enctype="multipart/form-data">
+            <table>
+                <tr>
+                    <th>Mã phòng trọ</th>
+                    <td>
+                        <input th:field="*{id}" readonly/>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Tên người thuê</th>
+                    <td>
+                        <input id="customerName" th:field="*{customerName}" class="form-control"
+                               placeholder="Customer name"
+                               tabindex="1" autofocus="autofocus"/>
+                    </td>
+                    <td>
+                        <span th:if="${#fields.hasErrors('customerName')}" th:errors="*{customerName}"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Phương thức thanh toán</th>
+                    <td>
+                        <select th:field="*{payment}" class="form-control" tabindex="2" id="payment">
+                            <option th:each="payment : ${paymentList}"
+                                    th:value="${payment.id}"
+                                    th:text="${payment.paymentMethod}"
+                            ></option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Số điện thoại</th>
+                    <td>
+                        <input id="phoneNumber" th:field="*{phoneNumber}" class="form-control"
+                               placeholder="Phone number"
+                               tabindex="3"/>
+                    </td>
+                    <td>
+                        <span th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Ngày thuê trọ</th>
+                    <td>
+                        <input type="date" id="startedDate" th:field="*{startedDate}" class="form-control"
+                               placeholder="Started date" tabindex="4"/>
+                    </td>
+                    <td>
+                        <span th:if="${#fields.hasErrors('startedDate')}" th:errors="*{startedDate}"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Ghi chú</th>
+                    <td>
+                        <input id="note" th:field="*{note}" class="form-control" placeholder="Note" tabindex="5"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit" class="btn btn-primary btn-custom" tabindex="12">Cập nhật
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a th:href="@{/motel/list}" class="btn btn-primary btn-custom" tabindex="13"><i
+                                class="fa fa-remove"
+                                aria-hidden="true"></i>Quay
+                            lại</a></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="card">
+    <div class="header">
+        <h2>
+            Danh sách sách
+        </h2>
+    </div>
+    <div class="body table-responsive">
+        <table class="table table-striped" id="dataTable-listStudent">
+            <thead>
+            <tr>
+                <th>Mã sách</th>
+                <th>Tên sách</th>
+                <th>Tác giả</th>
+                <th>Mô tả</th>
+                <th>Số lượng</th>
+                <th>Hành động</th>
+            </tr>
+            </thead>
+            <tbody id="result">
+            <tr th:each="book, iterStat: ${bookList}" th:object="${book}">
+                <td th:text="*{id}"></td>
+                <td th:text="*{name}"></td>
+                <td th:text="*{author}"></td>
+                <td th:text="*{description}"></td>
+                <td th:text="*{quantity}"></td>
+                <td>
+                    <a th:if="*{quantity != 0}"th:href="@{/card/borrow/{id}(id=*{id})}">Mượn</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

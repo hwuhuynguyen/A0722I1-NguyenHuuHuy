@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{template/template::header('List student')}">
+</head>
+<body>
+    <div th:replace="~{template/template::pageloader}"></div>
+    <nav th:replace="~{template/template::navbar}"></nav>
+    <section th:replace="~{student/layout::sidebar}"></section>
+
+    <section class="content">
+        <div class="container-fluid">
+            <!-- Vertical Layout -->
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>
+                                Student list
+                            </h2>
+                        </div>
+                        <div class="body table-responsive">
+                            <a th:href="@{/student/create}" class="btn btn-primary btn-custom">
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i> Add new student
+                            </a>
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Class name</th>
+                                    <th>Email</th>
+                                    <th>Phone Number</th>
+                                    <th>Birthdate</th>
+                                    <th>Sex</th>
+                                    <th>View</th>
+                                    <th>Delete</th>
+                                </tr>
+                                </thead>
+                                <tbody th:each="st, iterStat: ${students}">
+                                    <tr th:object="${st}">
+                                        <td th:text="*{id}"></td>
+                                        <td th:text="*{name}"></td>
+                                        <td th:text="*{className.className}"></td>
+                                        <td th:text="*{email}"></td>
+                                        <td th:text="*{phoneNumber}"></td>
+                                        <td th:text="*{birthdate}"></td>
+                                        <!--<td th:text="*{#dates.format(birthdate, 'yyyy-MM-dd')}"></td>-->
+                                        <td th:text="*{sex ? 'Nam' : 'Nữ'}"></td>
+                                        <td>
+                                            <a th:href="@{/student/view(id=*{id})}">View</a>
+                                        </td>
+                                        <td>
+                                            <a th:href="@{/student/delete/{id}(id=*{id})}">Delete</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="pagination">
+                                <a th:if="${page.hasPrevious()}" th:href="@{/student/listpagingslice(size=${page.size}, page=${page.getNumber()})}"
+                                   th:text="${page.getNumber()}"></a>
+                                <a th:if="${page.hasNext() || page.hasPrevious()}" th:href="@{/student/listpagingslice(size=${page.size}, page=${page.getNumber() + 1})}"
+                                   th:text="${page.getNumber() + 1}"></a>
+                                <a th:if="${page.hasNext()}" th:href="@{/student/listpagingslice(size=${page.size}, page=${page.getNumber() + 2})}"
+                                   th:text="${page.getNumber() + 2}"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div th:replace="~{template/template::script}"></div>
+    <div th:replace="~{template/template::footer}"></div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <section th:fragment="sidebar">
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <!-- User Info -->
+            <div class="user-info">
+
+            </div>
+            <!-- #User Info -->
+            <!-- Menu -->
+            <div class="menu" id="sidebarAdmin">
+                <ul class="list">
+                    <li class="header">
+                        <a th:href="@{/student/list}"><span>Student list</span></a>
+                    </li>
+                    <li class="header">
+                        <a th:href="@{/student/create}"><span>Add student</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- #Menu -->
+        </aside>
+    </section>
+</body>
+</html>

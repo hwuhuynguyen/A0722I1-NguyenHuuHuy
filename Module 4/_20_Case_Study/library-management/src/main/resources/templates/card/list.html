@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="card">
+    <div class="header">
+        <h2>
+            Danh sách mượn sách
+        </h2>
+    </div>
+    <div>
+        <p>Tìm kiếm theo: </p>
+        <form>
+            Tên sách:
+            <input name="book" type="text"/>
+            <br/>
+            Tên học sinh:
+            <input name="student" type="text"/>
+            <input type="submit" value="Tìm kiếm"/>
+        </form>
+    </div>
+    <div>
+        <a th:href="@{/card/list}">Danh sách tổng hợp</a>
+        <a th:href="@{/card/borrow-list}">Danh sách đang mượn</a>
+    </div>
+    <div class="body table-responsive">
+        <table class="table table-striped" id="dataTable-listStudent">
+            <thead>
+            <tr>
+                <th>Mã mượn sách</th>
+                <th>Tên sách</th>
+                <th>Tác giả</th>
+                <th>Tên học sinh</th>
+                <th>Lớp</th>
+                <th>Ngày mượn</th>
+                <th>Ngày trả</th>
+                <th>Trạng thái</th>
+                <th>Hành động</th>
+            </tr>
+            </thead>
+            <tbody id="result">
+            <tr th:each="card, iterStat: ${cardList}" th:object="${card}">
+                <td th:text="*{id}"></td>
+                <td th:text="*{book.name}"></td>
+                <td th:text="*{book.author}"></td>
+                <td th:text="*{student.name}"></td>
+                <td th:text="*{student.clazz}"></td>
+                <td th:text="*{#dates.format(startedDate, 'dd-MM-yyyy')}"></td>
+                <td th:text="*{#dates.format(endDate, 'dd-MM-yyyy')}"></td>
+                <td th:switch="*{status}">
+                    <p th:case="true">Đã trả sách</p>
+                    <p th:case="false">Đang mượn sách</p>
+                </td>
+                <td>
+                    <a th:if="*{!status}" th:href="@{/card/return/{id}(id=*{id})}">Trả sách</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

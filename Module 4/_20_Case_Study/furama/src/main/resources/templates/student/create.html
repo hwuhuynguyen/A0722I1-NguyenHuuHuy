@@ -1,0 +1,97 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{template/template::header('Create student')}">
+</head>
+<body>
+    <div th:replace="~{template/template::pageloader}"></div>
+    <nav th:replace="~{template/template::navbar}"></nav>
+    <section th:replace="~{student/layout::sidebar}"></section>
+
+    <section class="content">
+        <div class="container-fluid">
+            <!-- Vertical Layout -->
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2 th:text="#{title.create}">
+                                Add new Student
+                            </h2>
+                        </div>
+                        <div class="body">
+                            <form id="form-register" th:action="@{/student/create}" method="post" th:object="${student}" enctype="multipart/form-data">
+                                <label for="id">ID: <span style="color: red;"> *</span></label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input id="id" th:field="*{id}" class="form-control" placeholder="Student ID" tabindex="1" autofocus="autofocus" />
+                                        <span th:if="${#fields.hasErrors('id')}" th:errors="*{id}"></span>
+                                    </div>
+                                </div>
+
+                                <label for="name">Name: <span style="color: red;"> *</span></label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input id="name" th:field="*{name}" class="form-control" placeholder="Student Name" tabindex="2" />
+                                        <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span>
+                                    </div>
+                                </div>
+
+                                <label for="className">Class Name: <span style="color: red;"> *</span></label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <select th:field="*{className}" class="form-control" tabindex="3" id="className">
+                                            <option value=""></option>
+                                            <option th:each="className : ${classNames}"
+                                                    th:value="${className.classCode}"
+                                                    th:text="${className.className}"
+                                                    th:selected="${className.classCode.equals(student.className.classCode)}" />
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <label for="email">Email: <span style="color: red;"> *</span></label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input id="email" th:field="*{email}" class="form-control" placeholder="Email address" tabindex="4" />
+                                        <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span>
+                                    </div>
+                                </div>
+
+                                <label for="phoneNumber">Phone Number: <span style="color: red;"> *</span></label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input id="phoneNumber" th:field="*{phoneNumber}" class="form-control" placeholder="Phone number" tabindex="5" />
+                                        <span th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}"></span>
+                                    </div>
+                                </div>
+
+                                <label for="birthdate">Birthdate: <span style="color: red;"> *</span></label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input type="date" id="birthdate" th:field="*{birthdate}" class="form-control" placeholder="Birthdate" tabindex="6" />
+                                    </div>
+                                </div>
+
+                                <label for="male">Sex: <span style="color: red;"> *</span></label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input type="radio" th:field="*{sex}" th:value="true" id="male" th:selected="*{sex}" style="margin: unset;" th:tabindex="7">
+                                        <label th:text="Male" th:for="male"/>
+                                        <input type="radio" th:field="*{sex}" th:value="false" id="female" th:selected="*{!sex}" style="margin: unset;">
+                                        <label th:text="Female" th:for="female"/>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-custom" tabindex="12"><i class="fa fa-check" aria-hidden="true"></i> Add</button>
+                                <a th:href="@{/student/list}" class="btn btn-primary btn-custom" tabindex="13"><i class="fa fa-remove" aria-hidden="true"></i> Back</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div th:replace="~{template/template::script}"></div>
+    <div th:replace="~{template/template::footer}"></div>
+</body>
+</html>
