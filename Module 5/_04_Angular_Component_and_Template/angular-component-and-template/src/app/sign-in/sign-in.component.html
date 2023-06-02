@@ -1,0 +1,20 @@
+<form action="" [formGroup]="signInForm">
+  <div class="input-group mb-3">
+    <label for="email">Email: </label>
+    <input formControlName="email" type="email" id="email">
+  </div>
+  <p class="text-danger" *ngIf="signInForm.controls.email?.touched && signInForm.controls.email?.errors?.required">Email
+    bắt buộc nhập</p>
+  <p class="text-danger" *ngIf="signInForm.controls.email?.touched && signInForm.controls.email?.errors?.email">Email
+    không đúng định dạng</p>
+  <div class="input-group mb-3">
+    <label for="password">Password: </label>
+    <input formControlName="password" type="password" id="password">
+  </div>
+  <p class="text-danger"
+     *ngIf="signInForm.controls.password?.touched && signInForm.controls.password?.errors?.required">Password bắt buộc
+    nhập</p>
+  <p class="text-danger"
+     *ngIf="signInForm.controls.password?.touched && signInForm.controls.password?.errors?.minlength">Password phải có
+    ít nhất 6 ký tự</p>
+</form>

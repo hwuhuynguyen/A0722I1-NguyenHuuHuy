@@ -1,0 +1,18 @@
+<p>calculator works!</p>
+<div class="input-group">
+  <label for="first-number">Số thứ nhất: </label>
+  <input #firstNumber
+         type="number"
+         class="form-control" id="first-number" placeholder="Nhập số thứ nhất">
+</div>
+<div class="input-group">
+  <label for="second-number">Số thứ nhất: </label>
+  <input #secondNumber
+         type="number"
+         class="form-control" id="second-number" placeholder="Nhập số thứ hai">
+</div>
+<button type="button" class="btn btn-light" (click)="sum(firstNumber.value,secondNumber.value)">Cộng</button>
+<button type="button" class="btn btn-light" (click)="sub(firstNumber.value,secondNumber.value)">Trừ</button>
+<button type="button" class="btn btn-light" (click)="mul(firstNumber.value,secondNumber.value)">Nhân</button>
+<button type="button" class="btn btn-light" (click)="div(firstNumber.value,secondNumber.value)">Chia</button>
+<p>Kết quả: {{result}}</p>
