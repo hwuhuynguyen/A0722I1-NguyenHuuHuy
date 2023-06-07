@@ -1,0 +1,14 @@
+<p>dictionary-page works!</p>
+<h1>Từ điển đơn giản thui</h1>
+<table>
+  <tr>
+    <th>English words</th>
+    <th>Vietnamese words</th>
+    <th>Detail</th>
+  </tr>
+  <tr *ngFor="let vocabulary of dictionary; index as i">
+    <td>{{vocabulary.word}}</td>
+    <td>{{vocabulary.mean}}</td>
+    <td> <a [routerLink]="['/dictionary/detail/' + vocabulary.id]">Detail</a></td>
+  </tr>
+</table>

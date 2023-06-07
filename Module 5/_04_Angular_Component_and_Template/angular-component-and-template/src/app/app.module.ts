@@ -15,6 +15,7 @@ import { CountDownComponent } from './count-down/count-down.component';
 import { TodoComponent } from './todo/todo.component';
 import { RegisterComponent } from './register/register.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { AngularTimelinesAppComponent } from './angular-timelines-app/angular-timelines-app.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { SignInComponent } from './sign-in/sign-in.component';
     CountDownComponent,
     TodoComponent,
     RegisterComponent,
-    SignInComponent
+    SignInComponent,
+    AngularTimelinesAppComponent
   ],
   imports: [
     BrowserModule,
