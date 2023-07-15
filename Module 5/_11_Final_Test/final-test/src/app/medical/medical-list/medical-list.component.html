@@ -1,0 +1,30 @@
+<!--<p>medical-list works!</p>-->
+<table class="table table-hover">
+  <tr>
+    <th>No.</th>
+    <th>Record ID</th>
+    <th>Patient ID</th>
+    <th>Patient Name</th>
+    <th>Start date</th>
+    <th>End date</th>
+    <th>Reason</th>
+    <th>Treatment</th>
+    <th>Doctor</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let medical of medicals ; index as i">
+    <td>{{i + 1}}</td>
+    <td>{{medical.id}}</td>
+    <td>{{medical.patientId}}</td>
+    <td>{{medical.patientName}}</td>
+    <td>{{medical.startedDate | date: 'dd-MM-yyyy'}}</td>
+    <td>{{medical.endDate  | date: 'dd-MM-yyyy'}}</td>
+    <td>{{medical.reason}}</td>
+    <td>{{medical.treatment}}</td>
+    <td>{{medical.doctor}}</td>
+    <td class="d-flex justify-content-evenly">
+      <button class="btn btn-outline-primary"><a [routerLink]="['/medical/update/', medical.id]" class="text-decoration-none">Edit</a></button>
+      <button class="btn btn-danger" (click)="deleteById(medical.id)">Delete</button>
+    </td>
+  </tr>
+</table>

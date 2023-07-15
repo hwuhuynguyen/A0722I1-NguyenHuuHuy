@@ -1,0 +1,55 @@
+<p>customer-update works!</p>
+<form [formGroup]="customerForm" (ngSubmit)="updateCustomer(id)">
+  <table>
+    <tr>
+      <td>Mã khách hàng:</td>
+      <td><input type="text" formControlName="id"></td>
+    </tr>
+    <tr>
+      <td>Tên khách hàng:</td>
+      <td><input type="text" formControlName="customerName"></td>
+    </tr>
+    <tr>
+      <td>Ngày sinh</td>
+      <td><input type="date" formControlName="birthday"></td>
+    </tr>
+    <tr>
+      <td>Giới tính</td>
+      <td>
+        <input type="text" formControlName="gender">
+      </td>
+    </tr>
+    <tr>
+      <td>CCCD:</td>
+      <td><input type="text" formControlName="idNumber"></td>
+    </tr>
+    <tr>
+      <td>Số điện thoại:</td>
+      <td><input type="text" formControlName="phone"></td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td><input type="text" formControlName="email"></td>
+    </tr>
+    <tr>
+      <td>Loại khách hàng</td>
+      <td>
+<!--        <input type="text" formControlName="type">-->
+        <select id="customer-type" formControlName="type">
+          <option selected disabled>-- Chọn loại khách hàng --</option>
+          <option *ngFor="let ct of customerTypes" [value]="ct.id">{{ct.customerType}}</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Địa chỉ</td>
+      <td><input type="text" formControlName="address"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <button class="btn btn-success">Update</button>
+      </td>
+    </tr>
+  </table>
+</form>

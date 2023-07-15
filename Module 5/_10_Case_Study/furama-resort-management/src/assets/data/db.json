@@ -1,0 +1,110 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "customerName": "Nguyen Huu Huy",
+      "birthday": "2002-12-20",
+      "gender": "Male",
+      "idNumber": "0123456789",
+      "phone": "0123456789",
+      "email": "huy@gmail.com",
+      "type": {
+        "id": 5,
+        "customerType": "Diamond"
+      },
+      "address": "Vietnam"
+    },
+    {
+      "id": 2,
+      "customerName": "Nguyen Le Khanh",
+      "birthday": "1999-11-14",
+      "gender": "Male",
+      "idNumber": "0987654321",
+      "phone": "0987654321",
+      "email": "khanh@gmail.com",
+      "type": {
+        "id": 4,
+        "customerType": "Platinum"
+      },
+      "address": "Vietnam"
+    },
+    {
+      "id": 3,
+      "customerName": "Nguyen Thi Van",
+      "birthday": "1998-04-10",
+      "gender": "Female",
+      "idNumber": "0221123322",
+      "phone": "0221123322",
+      "email": "van@gmail.com",
+      "type": {
+        "id": 3,
+        "customerType": "Gold"
+      },
+      "address": "Vietnam"
+    },
+    {
+      "id": 4,
+      "customerName": "Nguyen Van Thanh",
+      "birthday": "1995-08-06",
+      "gender": "Male",
+      "idNumber": "0776655229",
+      "phone": "0776655229",
+      "email": "thanh@gmail.com",
+      "type": {
+        "id": 2,
+        "customerType": "Silver"
+      },
+      "address": "Vietnam"
+    },
+    {
+      "id": 5,
+      "customerName": "Le Hong Nhat",
+      "birthday": "1991-04-01",
+      "gender": "Male",
+      "idNumber": "0863184198",
+      "phone": "0863184198",
+      "email": "nhat@gmail.com",
+      "type": {
+        "id": 1,
+        "customerType": "Member"
+      },
+      "address": "Vietnam"
+    },
+    {
+      "id": 6,
+      "customerName": "Tran Quang Nhan",
+      "birthday": "2001-10-01",
+      "gender": "Male",
+      "idNumber": "0123123412",
+      "phone": "0123123412",
+      "email": "nhan@gmail.com",
+      "type": {
+        "id": 1,
+        "customerType": "Member"
+      },
+      "address": "Vietnam"
+    }
+  ],
+  "customerTypes": [
+    {
+      "id": 1,
+      "customerType": "Member"
+    },
+    {
+      "id": 2,
+      "customerType": "Silver"
+    },
+    {
+      "id": 3,
+      "customerType": "Gold"
+    },
+    {
+      "id": 4,
+      "customerType": "Platinum"
+    },
+    {
+      "id": 5,
+      "customerType": "Diamond"
+    }
+  ]
+}

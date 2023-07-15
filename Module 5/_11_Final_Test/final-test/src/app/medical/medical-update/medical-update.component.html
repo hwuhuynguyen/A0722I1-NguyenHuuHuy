@@ -1,0 +1,56 @@
+<!--<p>medical-update works!</p>-->
+<div class="my-5 m-auto d-flex">
+  <form [formGroup]="medicalForm" (ngSubmit)="updateMedical(id)">
+    <table>
+      <tr>
+        <td>Record ID:</td>
+        <td>
+          <input type="text" formControlName="id" readonly></td>
+      </tr>
+      <tr>
+        <td>Patient ID:</td>
+        <td><input type="text" formControlName="patientId" readonly></td>
+      </tr>
+      <tr>
+        <td>Patient name</td>
+        <td><input type="text" formControlName="patientName" required>
+        </td>
+      </tr>
+      <tr>
+        <td>Start date</td>
+        <td>
+          <input type="date" formControlName="startedDate" required>
+        </td>
+      </tr>
+      <tr>
+        <td>End date:</td>
+        <td><input type="date" formControlName="endDate" required></td>
+      </tr>
+      <tr>
+        <td>Reason:</td>
+        <td><input type="text" formControlName="reason" required></td>
+      </tr>
+      <tr>
+        <td>Treatment</td>
+        <td><input type="text" formControlName="treatment" required></td>
+      </tr>
+      <tr>
+      <tr>
+        <td>Doctor</td>
+        <td><input type="text" formControlName="doctor" required>
+        </td><td>
+          <span class="text-danger"
+             *ngIf="medicalForm.controls['doctor']?.touched && medicalForm.controls.doctor?.errors?.required">Trường này
+            bắt buộc phải có thông tin</span>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="d-flex justify-content-evenly">
+          <button class="btn btn-success">Update</button>
+          <a routerLink="/medical/list" class="btn btn-primary">Back to list</a>
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>

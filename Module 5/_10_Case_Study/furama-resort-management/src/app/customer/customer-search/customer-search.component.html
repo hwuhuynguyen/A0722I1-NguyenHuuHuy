@@ -1,0 +1,24 @@
+<form [formGroup]="customerForm" (ngSubmit)="search()">
+  <table>
+    <tr>
+      <th>Customer name:</th>
+      <th><input type="text" formControlName="customerName"></th>
+      <th>Lower price:</th>
+      <th><input type="number" formControlName="lowerPrice"></th>
+      <th>From:</th>
+      <th><input type="date" formControlName="beginDate"></th>
+      <th><button type="reset" class="btn btn-outline-secondary">Reset</button></th>
+    </tr>
+    <tr>
+      <th>Description:</th>
+      <th><input type="text" formControlName="description"></th>
+      <th>Upper price:</th>
+      <th><input type="number" formControlName="upperPrice"></th>
+      <th>To:</th>
+      <th><input type="date" formControlName="endDate"></th>
+      <th><button type="submit" class="btn btn-outline-primary">Search</button></th>
+    </tr>
+
+  </table>
+
+</form>

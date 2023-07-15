@@ -1,0 +1,28 @@
+<app-customer-search (newItemEvent)="search($event)"></app-customer-search>
+<table class="table">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Birthday</th>
+    <th>Gender</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th>Type of customer</th>
+    <th>Address</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let customer of customers">
+    <td>{{customer.id}}</td>
+    <td>{{customer.customerName}}</td>
+    <td>{{customer.birthday}}</td>
+    <td>{{customer.gender}}</td>
+    <td>{{customer.phone}}</td>
+    <td>{{customer.email}}</td>
+    <td>{{customer.type?.customerType}}</td>
+    <td>{{customer.address}}</td>
+    <td class="d-flex justify-content-evenly">
+      <button class="btn btn-outline-primary"><a [routerLink]="['/customer/update', customer.id]">Edit</a></button>
+      <button class="btn btn-danger" (click)="deleteById(customer.id)">Delete</button>
+    </td>
+  </tr>
+</table>
